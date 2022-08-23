@@ -1,0 +1,5400 @@
+
+Olumide@DESKTOP-VKK0L3I MINGW64 ~
+$ cd c:/original-coast-clothing
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://87d6-41-217-95-83.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/253788558082460
+WEBHOOK_VERIFIED
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/253788558082460
+Setting app 1915879865280056 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+Subscribing app 1915879865280056 to page 253788558082460
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vous
+ souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothin
+g! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automati
+zados de ejemplo. Si quieres crear una experiencia similar, visita https://fb.me
+/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name}
+}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automáti
+cos de muestra. Si quieres crear una experiencia similar, visita https://fb.me/g
+et-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique em
+ Começar para conferir nosso exemplo de experiência de mensagens automáticas. Se
+ você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik u
+ntuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda i
+ngin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على بد
+ء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كنت
+ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على ال
+ويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}!
+ Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu en
+tdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die Sei
+te https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}}
+! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un'e
+sperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スタート
+]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様のサ
+ービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려면
+ visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_name
+}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейдите
+ по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ่
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องการ
+สร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! Hã
+y nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự độn
+g của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”进
+入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sampl
+e-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https://f
+b.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 https:/
+/fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 1915879865280056
+Fetching personas for app 1915879865280056
+Enable Built-in NLP for Page 253788558082460
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 1915879865280056
+Unable to activate built-in NLP: Bad Request
+Request sent.
+Request sent.
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '1481390792344564',
+    Riandy: '5384411828318797',
+    Laura: '2861017134194872',
+    Jorge: '656740122414106'
+  }
+}
+WEBHOOK_VERIFIED
+Request sent.
+Request sent.
+WEBHOOK_VERIFIED
+� Received webhook:
+{
+  object: 'page',
+  entry: [
+    {
+      time: 1660726015190,
+      id: '0',
+      messaging: [
+        {
+          sender: { id: '12334' },
+          recipient: { id: '23245' },
+          timestamp: '1527459824',
+          message: { mid: 'test_message_id', text: 'test_message' }
+        }
+      ]
+    }
+  ]
+}
+Could not load profile for 12334: Bad Request {
+  error: {
+    message: "Unsupported get request. Object with ID '12334' does not exist, ca
+nnot be loaded due to missing permissions, or does not support this operation. P
+lease read the Graph API documentation at https://developers.facebook.com/docs/g
+raph-api",
+    type: 'GraphMethodException',
+    code: 100,
+    error_subcode: 33,
+    fbtrace_id: 'AyZDOQbW62xz6NicTl4sktS'
+  }
+}
+C:\original-coast-clothing\services\egain.js:207
+        let psid=user.psid;
+                      ^
+
+TypeError: Cannot read properties of undefined (reading 'psid')
+    at Function.SendEgainNewMessage (C:\original-coast-clothing\services\egain.j
+s:207:23)
+    at C:\original-coast-clothing\app.js:221:42
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/253788558082460
+Setting app 1915879865280056 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+Subscribing app 1915879865280056 to page 253788558082460
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vous
+ souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothin
+g! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automati
+zados de ejemplo. Si quieres crear una experiencia similar, visita https://fb.me
+/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name}
+}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automáti
+cos de muestra. Si quieres crear una experiencia similar, visita https://fb.me/g
+et-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique em
+ Começar para conferir nosso exemplo de experiência de mensagens automáticas. Se
+ você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik u
+ntuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda i
+ngin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على بد
+ء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كنت
+ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على ال
+ويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}!
+ Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu en
+tdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die Sei
+te https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}}
+! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un'e
+sperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スタート
+]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様のサ
+ービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려면
+ visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_name
+}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейдите
+ по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ่
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องการ
+สร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! Hã
+y nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự độn
+g của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”进
+入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sampl
+e-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https://f
+b.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 https:/
+/fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 1915879865280056
+Fetching personas for app 1915879865280056
+Enable Built-in NLP for Page 253788558082460
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 1915879865280056
+Unable to activate built-in NLP: Bad Request
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '1481390792344564',
+    Riandy: '5384411828318797',
+    Laura: '2861017134194872',
+    Jorge: '656740122414106'
+  }
+}
+Request sent.
+Request sent.
+WEBHOOK_VERIFIED
+Request sent.
+Request sent.
+� Received webhook:
+{
+  object: 'page',
+  entry: [
+    {
+      time: 1660726213624,
+      id: '0',
+      messaging: [
+        {
+          sender: { id: '12334' },
+          recipient: { id: '23245' },
+          timestamp: '1527459824',
+          message: { mid: 'test_message_id', text: 'test_message' }
+        }
+      ]
+    }
+  ]
+}
+Could not load profile for 12334: Bad Request {
+  error: {
+    message: "Unsupported get request. Object with ID '12334' does not exist, ca
+nnot be loaded due to missing permissions, or does not support this operation. P
+lease read the Graph API documentation at https://developers.facebook.com/docs/g
+raph-api",
+    type: 'GraphMethodException',
+    code: 100,
+    error_subcode: 33,
+    fbtrace_id: 'ADTt3AFQw2H9kyHkj5tKtvY'
+  }
+}
+C:\original-coast-clothing\services\egain.js:207
+        let psid=user.psid;
+                      ^
+
+TypeError: Cannot read properties of undefined (reading 'psid')
+    at Function.SendEgainNewMessage (C:\original-coast-clothing\services\egain.j
+s:207:23)
+    at C:\original-coast-clothing\app.js:221:42
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+WEBHOOK_VERIFIED
+� Received webhook:
+{
+  object: 'page',
+  entry: [
+    {
+      time: 1660729944499,
+      id: '0',
+      messaging: [
+        {
+          sender: { id: '12334' },
+          recipient: { id: '23245' },
+          timestamp: '1527459824',
+          message: { mid: 'test_message_id', text: 'test_message' }
+        }
+      ]
+    }
+  ]
+}
+Could not load profile for 12334: Bad Request {
+  error: {
+    message: "Unsupported get request. Object with ID '12334' does not exist, ca
+nnot be loaded due to missing permissions, or does not support this operation. P
+lease read the Graph API documentation at https://developers.facebook.com/docs/g
+raph-api",
+    type: 'GraphMethodException',
+    code: 100,
+    error_subcode: 33,
+    fbtrace_id: 'AUj6HQ92b9zAUT_H5NiXIj7'
+  }
+}
+C:\original-coast-clothing\services\egain.js:207
+        let psid=user.psid;
+                      ^
+
+TypeError: Cannot read properties of undefined (reading 'psid')
+    at Function.SendEgainNewMessage (C:\original-coast-clothing\services\egain.j
+s:207:23)
+    at C:\original-coast-clothing\app.js:221:42
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+Setting app 1213711822798710 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+Subscribing app 1213711822798710 to page 1178751258914238
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vous
+ souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothin
+g! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automati
+zados de ejemplo. Si quieres crear una experiencia similar, visita https://fb.me
+/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name}
+}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automáti
+cos de muestra. Si quieres crear una experiencia similar, visita https://fb.me/g
+et-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique em
+ Começar para conferir nosso exemplo de experiência de mensagens automáticas. Se
+ você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik u
+ntuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda i
+ngin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على بد
+ء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كنت
+ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على ال
+ويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}!
+ Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu en
+tdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die Sei
+te https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}}
+! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un'e
+sperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スタート
+]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様のサ
+ービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려면
+ visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_name
+}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейдите
+ по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ่
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องการ
+สร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! Hã
+y nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự độn
+g của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”进
+入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sampl
+e-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https://f
+b.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 https:/
+/fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 1213711822798710
+Fetching personas for app 1213711822798710
+Enable Built-in NLP for Page 1178751258914238
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 1213711822798710
+Unable to activate built-in NLP: Bad Request
+Request sent.
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '1481390792344564',
+    Riandy: '5384411828318797',
+    Laura: '2861017134194872',
+    Jorge: '656740122414106'
+  }
+}
+Unable to callSubscribedApps: Forbidden {
+  error: {
+    message: '(#200) User does not have sufficient administrative permission for
+ this action on this page. If the page business requires Two Factor Authenticati
+on, the user also needs to enable Two Factor Authentication.',
+    type: 'OAuthException',
+    code: 200,
+    fbtrace_id: 'AWS2m3zACwZfeDDMLxAyKx2'
+  }
+}
+WEBHOOK_VERIFIED
+Request sent.
+Request sent.
+WEBHOOK_VERIFIED
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+Setting app 1213711822798710 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+Subscribing app 1213711822798710 to page 1178751258914238
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vous
+ souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothin
+g! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automati
+zados de ejemplo. Si quieres crear una experiencia similar, visita https://fb.me
+/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name}
+}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automáti
+cos de muestra. Si quieres crear una experiencia similar, visita https://fb.me/g
+et-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique em
+ Começar para conferir nosso exemplo de experiência de mensagens automáticas. Se
+ você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik u
+ntuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda i
+ngin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على بد
+ء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كنت
+ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على ال
+ويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}!
+ Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu en
+tdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die Sei
+te https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}}
+! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un'e
+sperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スタート
+]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様のサ
+ービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려면
+ visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_name
+}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейдите
+ по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ่
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องการ
+สร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! Hã
+y nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự độn
+g của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”进
+入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sampl
+e-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https://f
+b.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 https:/
+/fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 1213711822798710
+Fetching personas for app 1213711822798710
+Enable Built-in NLP for Page 1178751258914238
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 1213711822798710
+Unable to activate built-in NLP: Bad Request
+Unable to callSubscribedApps: Forbidden {
+  error: {
+    message: '(#200) User does not have sufficient administrative permission for
+ this action on this page. If the page business requires Two Factor Authenticati
+on, the user also needs to enable Two Factor Authentication.',
+    type: 'OAuthException',
+    code: 200,
+    fbtrace_id: 'A4bX50GL-VBrKLnvwjIq9Pa'
+  }
+}
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '1481390792344564',
+    Riandy: '5384411828318797',
+    Laura: '2861017134194872',
+    Jorge: '656740122414106'
+  }
+}
+Request sent.
+WEBHOOK_VERIFIED
+Request sent.
+Request sent.
+WEBHOOK_VERIFIED
+Error: Couldn't validate the request signature.
+    at verifyRequestSignature (C:\original-coast-clothing\app.js:439:13)
+    at C:\original-coast-clothing\node_modules\body-parser\lib\read.js:104:9
+    at invokeCallback (C:\original-coast-clothing\node_modules\raw-body\index.js
+:224:16)
+    at done (C:\original-coast-clothing\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\original-coast-clothing\node_modules\raw-body\i
+ndex.js:273:7)
+    at IncomingMessage.emit (node:events:538:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+Setting app 1213711822798710 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+Subscribing app 1213711822798710 to page 1178751258914238
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vous
+ souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothin
+g! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automati
+zados de ejemplo. Si quieres crear una experiencia similar, visita https://fb.me
+/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name}
+}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automáti
+cos de muestra. Si quieres crear una experiencia similar, visita https://fb.me/g
+et-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique em
+ Começar para conferir nosso exemplo de experiência de mensagens automáticas. Se
+ você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik u
+ntuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda i
+ngin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على بد
+ء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كنت
+ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على ال
+ويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}!
+ Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu en
+tdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die Sei
+te https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}}
+! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un'e
+sperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スタート
+]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様のサ
+ービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려면
+ visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_name
+}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейдите
+ по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ่
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องการ
+สร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! Hã
+y nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự độn
+g của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”进
+入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sampl
+e-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https://f
+b.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 https:/
+/fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 1213711822798710
+Fetching personas for app 1213711822798710
+Enable Built-in NLP for Page 1178751258914238
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 1213711822798710
+Unable to activate built-in NLP: Bad Request
+Unable to callSubscribedApps: Forbidden {
+  error: {
+    message: '(#200) User does not have sufficient administrative permission for
+ this action on this page. If the page business requires Two Factor Authenticati
+on, the user also needs to enable Two Factor Authentication.',
+    type: 'OAuthException',
+    code: 200,
+    fbtrace_id: 'AxfwazkUg754SuocWsmU9bb'
+  }
+}
+Request sent.
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '1481390792344564',
+    Riandy: '5384411828318797',
+    Laura: '2861017134194872',
+    Jorge: '656740122414106'
+  }
+}
+WEBHOOK_VERIFIED
+Request sent.
+Request sent.
+Error: Couldn't validate the request signature.
+    at verifyRequestSignature (C:\original-coast-clothing\app.js:439:13)
+    at C:\original-coast-clothing\node_modules\body-parser\lib\read.js:104:9
+    at invokeCallback (C:\original-coast-clothing\node_modules\raw-body\index.js
+:224:16)
+    at done (C:\original-coast-clothing\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\original-coast-clothing\node_modules\raw-body\i
+ndex.js:273:7)
+    at IncomingMessage.emit (node:events:538:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+Setting app 1573110076455804 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+Subscribing app 1573110076455804 to page 1178751258914238
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vous
+ souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothin
+g! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automati
+zados de ejemplo. Si quieres crear una experiencia similar, visita https://fb.me
+/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name}
+}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automáti
+cos de muestra. Si quieres crear una experiencia similar, visita https://fb.me/g
+et-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique em
+ Começar para conferir nosso exemplo de experiência de mensagens automáticas. Se
+ você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik u
+ntuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda i
+ngin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على بد
+ء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كنت
+ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على ال
+ويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}!
+ Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu en
+tdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die Sei
+te https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}}
+! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un'e
+sperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スタート
+]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様のサ
+ービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려면
+ visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_name
+}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейдите
+ по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ่
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องการ
+สร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! Hã
+y nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự độn
+g của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”进
+入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sampl
+e-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https://f
+b.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 https:/
+/fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 1573110076455804
+Fetching personas for app 1573110076455804
+Enable Built-in NLP for Page 1178751258914238
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 1573110076455804
+Unable to activate built-in NLP: Bad Request
+Request sent.
+Unable to callSubscribedApps: Forbidden {
+  error: {
+    message: '(#200) User does not have sufficient administrative permission for
+ this action on this page. If the page business requires Two Factor Authenticati
+on, the user also needs to enable Two Factor Authentication.',
+    type: 'OAuthException',
+    code: 200,
+    fbtrace_id: 'ArFQn25mRpxl7uzZ4kEcI50'
+  }
+}
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '1481390792344564',
+    Riandy: '5384411828318797',
+    Laura: '2861017134194872',
+    Jorge: '656740122414106'
+  }
+}
+WEBHOOK_VERIFIED
+Request sent.
+Request sent.
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660739658985,
+      id: '17841404634020717',
+      messaging: [
+        {
+          sender: { id: '7407800592594275' },
+          recipient: { id: '17841404634020717' },
+          timestamp: 1660739658410,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDA0NjM0MDIwNzE3OjM0
+MDI4MjM2Njg0MTcxMDMwMDk0OTEyODIyMTQ4MDg3MTk1NTc4OTozMDYzNTIzOTQ1MTc0OTc5MzU4ODU4
+NDkwNDQ1MzUyMTQwOAZDZD',
+            text: 'hi'
+          }
+        }
+      ]
+    }
+  ]
+}
+Could not load profile for 7407800592594275: Not Found {
+  error: {
+    message: '(#803) IGSID not found',
+    type: 'OAuthException',
+    code: 803,
+    fbtrace_id: 'AA88SivMujyEzd7mJh3aFXk'
+  }
+}
+C:\original-coast-clothing\services\egain.js:207
+        let psid=user.psid;
+                      ^
+
+TypeError: Cannot read properties of undefined (reading 'psid')
+    at Function.SendEgainNewMessage (C:\original-coast-clothing\services\egain.j
+s:207:23)
+    at C:\original-coast-clothing\app.js:221:42
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ ^C
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+Setting app 1573110076455804 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+Subscribing app 1573110076455804 to page 1178751258914238
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vous
+ souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothin
+g! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automati
+zados de ejemplo. Si quieres crear una experiencia similar, visita https://fb.me
+/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name}
+}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automáti
+cos de muestra. Si quieres crear una experiencia similar, visita https://fb.me/g
+et-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique em
+ Começar para conferir nosso exemplo de experiência de mensagens automáticas. Se
+ você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik u
+ntuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda i
+ngin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على بد
+ء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كنت
+ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على ال
+ويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}!
+ Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu en
+tdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die Sei
+te https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}}
+! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un'e
+sperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スタート
+]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様のサ
+ービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려면
+ visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_name
+}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейдите
+ по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ่
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องการ
+สร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! Hã
+y nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự độn
+g của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”进
+入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sampl
+e-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https://f
+b.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 https:/
+/fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 1573110076455804
+Fetching personas for app 1573110076455804
+Enable Built-in NLP for Page 1178751258914238
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 1573110076455804
+Unable to activate built-in NLP: Bad Request
+Request sent.
+WEBHOOK_VERIFIED
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '721645425694756',
+    Riandy: '3124492104467419',
+    Laura: '5281949601872552',
+    Jorge: '326133039592794'
+  }
+}
+Request sent.
+Request sent.
+Request sent.
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660740014342,
+      id: '17841404634020717',
+      messaging: [
+        {
+          sender: { id: '7407800592594275' },
+          recipient: { id: '17841404634020717' },
+          timestamp: 1660740013793,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDA0NjM0MDIwNzE3OjM0
+MDI4MjM2Njg0MTcxMDMwMDk0OTEyODIyMTQ4MDg3MTk1NTc4OTozMDYzNTI0NjAwNzQwOTE3MTg2Mjkx
+NTAwMjM2OTMxMDcyMAZDZD',
+            text: 'hello'
+          }
+        }
+      ]
+    }
+  ]
+}
+Inside  SendEgain New  Message
+updated user profile:
+{
+  userk: User {
+    psid: '7407800592594275',
+    name: 'Olumide Odebiyi',
+    convoid: '',
+    firstName: '',
+    lastName: '',
+    locale: '',
+    timezone: '',
+    gender: '',
+    username: 'olumideodebiyi'
+  }
+}
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+Setting app 1573110076455804 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+Subscribing app 1573110076455804 to page 1178751258914238
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vous
+ souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothin
+g! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automati
+zados de ejemplo. Si quieres crear una experiencia similar, visita https://fb.me
+/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name}
+}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automáti
+cos de muestra. Si quieres crear una experiencia similar, visita https://fb.me/g
+et-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique em
+ Começar para conferir nosso exemplo de experiência de mensagens automáticas. Se
+ você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik u
+ntuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda i
+ngin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على بد
+ء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كنت
+ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على ال
+ويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}!
+ Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu en
+tdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die Sei
+te https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}}
+! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un'e
+sperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スタート
+]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様のサ
+ービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려면
+ visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_name
+}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейдите
+ по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ่
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องการ
+สร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! Hã
+y nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự độn
+g của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”进
+入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sampl
+e-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https://f
+b.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 https:/
+/fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 1573110076455804
+Fetching personas for app 1573110076455804
+Enable Built-in NLP for Page 1178751258914238
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 1573110076455804
+WEBHOOK_VERIFIED
+Unable to activate built-in NLP: Bad Request
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '721645425694756',
+    Riandy: '3124492104467419',
+    Laura: '5281949601872552',
+    Jorge: '326133039592794'
+  }
+}
+Request sent.
+Request sent.
+Request sent.
+Request sent.
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660752424937,
+      id: '17841404634020717',
+      messaging: [
+        {
+          sender: { id: '4984811294969631' },
+          recipient: { id: '17841404634020717' },
+          timestamp: 1660752423840,
+          read: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDA0NjM0MDIwNzE3OjM0
+MDI4MjM2Njg0MTcxMDMwMDk0OTEyODE3MjQ4MTc0MDgxNzgyMjozMDYxNDM3NTEyMzQ0NTc4MjE1MTc4
+MDgzMjc3NzMzODg4MAZDZD'
+          }
+        }
+      ]
+    }
+  ]
+}
+Got a read event
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660752465489,
+      id: '17841404634020717',
+      messaging: [
+        {
+          sender: { id: '4984811294969631' },
+          recipient: { id: '17841404634020717' },
+          timestamp: 1660752465203,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDA0NjM0MDIwNzE3OjM0
+MDI4MjM2Njg0MTcxMDMwMDk0OTEyODE3MjQ4MTc0MDgxNzgyMjozMDYzNTQ3NTY5NTM5NTc0ODMwNTEw
+MjgzMzQ1MzEwNTE1MgZDZD',
+            text: 'hello'
+          }
+        }
+      ]
+    }
+  ]
+}
+Inside  SendEgain New  Message
+updated user profile:
+{
+  userk: User {
+    psid: '4984811294969631',
+    name: 'John A. Adepoju',
+    convoid: '',
+    firstName: '',
+    lastName: '',
+    locale: '',
+    timezone: '',
+    gender: '',
+    username: 'john_crown1'
+  }
+}
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visiting
+:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+Setting app 1573110076455804 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+Subscribing app 1573110076455804 to page 1178751258914238
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vous
+ souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothin
+g! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automati
+zados de ejemplo. Si quieres crear una experiencia similar, visita https://fb.me
+/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name}
+}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automáti
+cos de muestra. Si quieres crear una experiencia similar, visita https://fb.me/g
+et-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique em
+ Começar para conferir nosso exemplo de experiência de mensagens automáticas. Se
+ você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik u
+ntuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda i
+ngin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على بد
+ء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كنت
+ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على ال
+ويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}!
+ Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu en
+tdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die Sei
+te https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}}
+! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un'e
+sperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スタート
+]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様のサ
+ービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려면
+ visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_name
+}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейдите
+ по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ่
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องการ
+สร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! Hã
+y nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự độn
+g của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”进
+入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sampl
+e-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https://f
+b.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開始
+」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 https:/
+/fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 1573110076455804
+Fetching personas for app 1573110076455804
+Enable Built-in NLP for Page 1178751258914238
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 1573110076455804
+Unable to activate built-in NLP: Bad Request
+Request sent.
+WEBHOOK_VERIFIED
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '721645425694756',
+    Riandy: '3124492104467419',
+    Laura: '5281949601872552',
+    Jorge: '326133039592794'
+  }
+}
+Request sent.
+Request sent.
+Request sent.
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660816160566,
+      id: '17841404634020717',
+      standby: [
+        {
+          sender: { id: '7707164436022297' },
+          recipient: { id: '17841404634020717' },
+          timestamp: 1660816159837,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDA0NjM0MDIwNzE3OjM0
+MDI4MjM2Njg0MTcxMDMwMDk0OTEyODI0MDk0ODU4Mjg4Mjc4NTozMDYzNjY1MDY1Mzk5OTkzNTIzMDEx
+MTAzMzg5ODA0MTM0NAZDZD',
+            text: 'Hello'
+          }
+        }
+      ]
+    }
+  ]
+}
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660816201402,
+      id: '17841404634020717',
+      standby: [
+        {
+          sender: { id: '7707164436022297' },
+          recipient: { id: '17841404634020717' },
+          timestamp: 1660816200866,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDA0NjM0MDIwNzE3OjM0
+MDI4MjM2Njg0MTcxMDMwMDk0OTEyODI0MDk0ODU4Mjg4Mjc4NTozMDYzNjY1MTQxMDg1ODExMjQ0NTE4
+MzA1NzQyNzY5MzU2OAZDZD',
+            attachments: [
+              {
+                type: 'image',
+                payload: {
+                  url: 'https://lookaside.fbsbx.com/ig_messaging_cdn/?asset_id=8
+05485460628257&signature=AbybUM_2GJW6I9nSKjm8dY9UmhcDCHdW6kAiB6gWQ1xS7cfF4NwH7Yq
+Mh8-AmTsnaQZrvQ1v1B2B9ma0bI2ONXIeEiP4fVZ2VH1Z0CdcSTo0eDxtIEYIw6nGU-EadVSVRmJDuJ5
+cF7h8EcvZED3SK-OncWZOQiHdCI_fHmfYhB_MTQs9kUgGqDOWgYnASuxNYcBWeRi1xMHnHQTOjhsQl2U
+CaGLn2w'
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660816215671,
+      id: '17841404634020717',
+      standby: [
+        {
+          sender: { id: '7707164436022297' },
+          recipient: { id: '17841404634020717' },
+          timestamp: 1660816215432,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDA0NjM0MDIwNzE3OjM0
+MDI4MjM2Njg0MTcxMDMwMDk0OTEyODI0MDk0ODU4Mjg4Mjc4NTozMDYzNjY1MTY3OTU1Nzk0Mjk2ODYy
+MjU5MjUyNTU5ODcyMAZDZD',
+            text: 'Hi'
+          }
+        }
+      ]
+    }
+  ]
+}
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660816242799,
+      id: '17841404634020717',
+      messaging: [
+        {
+          sender: { id: '4984811294969631' },
+          recipient: { id: '17841404634020717' },
+          timestamp: 1660816242400,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDA0NjM0MDIwNzE3OjM0
+MDI4MjM2Njg0MTcxMDMwMDk0OTEyODE3MjQ4MTc0MDgxNzgyMjozMDYzNjY1MjE3NzAyODg4ODU5ODE5
+NDM4OTg2NjUxMjM4NAZDZD',
+            text: 'hi'
+          }
+        }
+      ]
+    }
+  ]
+}
+Inside  SendEgain New  Message
+updated user profile:
+{
+  userk: User {
+    psid: '4984811294969631',
+    name: 'John A. Adepoju',
+    convoid: '',
+    firstName: '',
+    lastName: '',
+    locale: '',
+    timezone: '',
+    gender: '',
+    username: 'john_crown1'
+  }
+}
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660816376956,
+      id: '17841404634020717',
+      messaging: [
+        {
+          sender: { id: '7407800592594275' },
+          recipient: { id: '17841404634020717' },
+          timestamp: 1660816376354,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDA0NjM0MDIwNzE3OjM0
+MDI4MjM2Njg0MTcxMDMwMDk0OTEyODIyMTQ4MDg3MTk1NTc4OTozMDYzNjY1NDY0ODA0MDI4MTExMjA5
+MjYzMDI4NzY0NjcyMAZDZD',
+MjYzMDI4NzY0NjcyMAZDZD',
+            text: 'hi'
+          }
+        }
+      ]
+    }
+  ]
+}
+Inside  SendEgain New  Message
+updated user profile:
+{
+  userk: User {
+    psid: '7407800592594275',
+    name: 'Olumide Odebiyi',
+    convoid: '',
+    firstName: '',
+    lastName: '',
+    locale: '',
+    timezone: '',
+    gender: '',
+    username: 'olumideodebiyi'
+  }
+}
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visitin
+g:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+Setting app 1573110076455804 callback url to https://f506-197-242-103-120.ngrok
+.io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+Subscribing app 1573110076455804 to page 1178751258914238
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+ customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+ démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vo
+us souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothi
+ng! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automa
+tizados de ejemplo. Si quieres crear una experiencia similar, visita https://fb
+.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name
+}}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automá
+ticos de muestra. Si quieres crear una experiencia similar, visita https://fb.m
+e/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique e
+m Começar para conferir nosso exemplo de experiência de mensagens automáticas.
+Se você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik
+untuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda
+ ingin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على ب
+دء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كن
+ت ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على
+ الويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}
+! Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu
+entdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die
+Seite https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}
+}! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un
+'esperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スター
+ト]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様の
+サービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려
+면 visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_nam
+e}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейди
+те по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องก
+ารสร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! H
+ãy nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự đ
+ộng của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập htt
+ps://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”
+进入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sa
+mple-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 http
+s://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 1573110076455804
+Fetching personas for app 1573110076455804
+Enable Built-in NLP for Page 1178751258914238
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 1573110076455804
+Request sent.
+Unable to activate built-in NLP: Bad Request
+Request sent.
+WEBHOOK_VERIFIED
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '721645425694756',
+    Riandy: '3124492104467419',
+    Laura: '5281949601872552',
+    Jorge: '326133039592794'
+  }
+}
+Request sent.
+Request sent.
+WEBHOOK_VERIFIED
+WEBHOOK_VERIFIED
+Error: Couldn't validate the request signature.
+    at verifyRequestSignature (C:\original-coast-clothing\app.js:439:13)
+    at C:\original-coast-clothing\node_modules\body-parser\lib\read.js:104:9
+    at invokeCallback (C:\original-coast-clothing\node_modules\raw-body\index.j
+s:224:16)
+    at done (C:\original-coast-clothing\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\original-coast-clothing\node_modules\raw-body\
+index.js:273:7)
+    at IncomingMessage.emit (node:events:538:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Error: Couldn't validate the request signature.
+    at verifyRequestSignature (C:\original-coast-clothing\app.js:439:13)
+    at C:\original-coast-clothing\node_modules\body-parser\lib\read.js:104:9
+    at invokeCallback (C:\original-coast-clothing\node_modules\raw-body\index.j
+s:224:16)
+    at done (C:\original-coast-clothing\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\original-coast-clothing\node_modules\raw-body\
+index.js:273:7)
+    at IncomingMessage.emit (node:events:538:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visitin
+g:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+Setting app 739361080693941 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+Subscribing app 739361080693941 to page 1178751258914238
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+ customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+ démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vo
+us souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothi
+ng! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automa
+tizados de ejemplo. Si quieres crear una experiencia similar, visita https://fb
+.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name
+}}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automá
+ticos de muestra. Si quieres crear una experiencia similar, visita https://fb.m
+e/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique e
+m Começar para conferir nosso exemplo de experiência de mensagens automáticas.
+Se você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik
+untuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda
+ ingin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على ب
+دء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كن
+ت ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على
+ الويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}
+! Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu
+entdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die
+Seite https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}
+}! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un
+'esperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スター
+ト]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様の
+サービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려
+면 visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_nam
+e}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейди
+те по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องก
+ารสร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! H
+ãy nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự đ
+ộng của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập htt
+ps://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”
+进入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sa
+mple-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 http
+s://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 739361080693941
+Fetching personas for app 739361080693941
+Enable Built-in NLP for Page 1178751258914238
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 739361080693941
+Unable to activate built-in NLP: Bad Request
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '721645425694756',
+    Riandy: '3124492104467419',
+    Laura: '5281949601872552',
+    Jorge: '326133039592794'
+  }
+}
+Request sent.
+WEBHOOK_VERIFIED
+Request sent.
+Request sent.
+Request sent.
+� Received webhook:
+{
+  object: 'page',
+  entry: [
+    {
+      time: 1660830735775,
+      id: '0',
+      messaging: [
+        {
+          sender: { id: '12334' },
+          recipient: { id: '23245' },
+          timestamp: '1527459824',
+          message: { mid: 'test_message_id', text: 'test_message' }
+        }
+      ]
+    }
+  ]
+}
+Could not load profile for 12334: Bad Request {
+  error: {
+    message: "Unsupported get request. Object with ID '12334' does not exist, c
+annot be loaded due to missing permissions, or does not support this operation.
+ Please read the Graph API documentation at https://developers.facebook.com/doc
+s/graph-api",
+    type: 'GraphMethodException',
+    code: 100,
+    error_subcode: 33,
+    fbtrace_id: 'A1qKVqFJKH2J-ch_9rRnRv_'
+  }
+}
+C:\original-coast-clothing\services\egain.js:207
+        let psid=user.psid;
+                      ^
+
+TypeError: Cannot read properties of undefined (reading 'psid')
+    at Function.SendEgainNewMessage (C:\original-coast-clothing\services\egain.
+js:207:23)
+    at C:\original-coast-clothing\app.js:221:42
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ ^C
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visitin
+g:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/1178751258914238
+Setting app 739361080693941 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+Subscribing app 739361080693941 to page 1178751258914238
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+ customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+ démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vo
+us souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothi
+ng! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automa
+tizados de ejemplo. Si quieres crear una experiencia similar, visita https://fb
+.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name
+}}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automá
+ticos de muestra. Si quieres crear una experiencia similar, visita https://fb.m
+e/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique e
+m Começar para conferir nosso exemplo de experiência de mensagens automáticas.
+Se você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik
+untuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda
+ ingin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على ب
+دء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كن
+ت ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على
+ الويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}
+! Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu
+entdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die
+Seite https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}
+}! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un
+'esperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スター
+ト]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様の
+サービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려
+면 visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_nam
+e}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейди
+те по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องก
+ารสร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! H
+ãy nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự đ
+ộng của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập htt
+ps://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”
+进入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sa
+mple-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 http
+s://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 739361080693941
+Fetching personas for app 739361080693941
+Enable Built-in NLP for Page 1178751258914238
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 739361080693941
+Request sent.
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '721645425694756',
+    Riandy: '3124492104467419',
+    Laura: '5281949601872552',
+    Jorge: '326133039592794'
+  }
+}
+Request sent.
+Request sent.
+Unable to activate built-in NLP: Bad Request
+WEBHOOK_VERIFIED
+Request sent.
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660830776605,
+      id: '17841400743894470',
+      messaging: [
+        {
+          sender: { id: '5403783423032748' },
+          recipient: { id: '17841400743894470' },
+          timestamp: 1660830775847,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDAwNzQzODk0NDcwOjM
+0MDI4MjM2Njg0MTcxMDMwMDk0OTEyODIyMjA0OTk1NzE3MzA4MDozMDYzNjkyMDI3MTgwNjc3ODI2OT
+EyMjQ3OTc2Mjk2NDQ4MAZDZD',
+            text: 'hello'
+          }
+        }
+      ]
+    }
+  ]
+}
+Could not load profile for 5403783423032748: Not Found {
+  error: {
+    message: '(#803) IGSID not found',
+    type: 'OAuthException',
+    code: 803,
+    fbtrace_id: 'A4R5vIIXl5GhwyjxRi1jif5'
+  }
+}
+C:\original-coast-clothing\services\egain.js:207
+        let psid=user.psid;
+                      ^
+
+TypeError: Cannot read properties of undefined (reading 'psid')
+    at Function.SendEgainNewMessage (C:\original-coast-clothing\services\egain.
+js:207:23)
+    at C:\original-coast-clothing\app.js:221:42
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ ^C
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visitin
+g:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/253788558082460
+Setting app 739361080693941 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+Subscribing app 739361080693941 to page 253788558082460
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+ customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+ démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vo
+us souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothi
+ng! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automa
+tizados de ejemplo. Si quieres crear una experiencia similar, visita https://fb
+.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name
+}}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automá
+ticos de muestra. Si quieres crear una experiencia similar, visita https://fb.m
+e/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique e
+m Começar para conferir nosso exemplo de experiência de mensagens automáticas.
+Se você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik
+untuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda
+ ingin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على ب
+دء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كن
+ت ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على
+ الويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}
+! Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu
+entdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die
+Seite https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}
+}! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un
+'esperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スター
+ト]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様の
+サービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려
+면 visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_nam
+e}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейди
+те по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องก
+ารสร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! H
+ãy nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự đ
+ộng của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập htt
+ps://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”
+进入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sa
+mple-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 http
+s://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 739361080693941
+Fetching personas for app 739361080693941
+Enable Built-in NLP for Page 253788558082460
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 739361080693941
+Unable to activate built-in NLP: Bad Request
+Request sent.
+Unable to callSubscribedApps: Forbidden {
+  error: {
+    message: '(#200) User does not have sufficient administrative permission fo
+r this action on this page. If the page business requires Two Factor Authentica
+tion, the user also needs to enable Two Factor Authentication.',
+    type: 'OAuthException',
+    code: 200,
+    fbtrace_id: 'AsK1dqPH3lsPutWzDpY_asy'
+  }
+}
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '721645425694756',
+    Riandy: '3124492104467419',
+    Laura: '5281949601872552',
+    Jorge: '326133039592794'
+  }
+}
+WEBHOOK_VERIFIED
+Request sent.
+Request sent.
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660830969686,
+      id: '17841400743894470',
+      messaging: [
+        {
+          sender: { id: '5403783423032748' },
+          recipient: { id: '17841400743894470' },
+          timestamp: 1660830969269,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDAwNzQzODk0NDcwOjM
+0MDI4MjM2Njg0MTcxMDMwMDk0OTEyODIyMjA0OTk1NzE3MzA4MDozMDYzNjkyMzgzOTgwNzEzNjY2Mz
+I3NjMwMTM0MzI2MDY3MgZDZD',
+            text: 'hello'
+          }
+        }
+      ]
+    }
+  ]
+}
+Could not load profile for 5403783423032748: Not Found {
+  error: {
+    message: '(#803) IGSID not found',
+    type: 'OAuthException',
+    code: 803,
+    fbtrace_id: 'A-OxDgj8_wAGFVxhi_buyhd'
+  }
+}
+C:\original-coast-clothing\services\egain.js:207
+        let psid=user.psid;
+                      ^
+
+TypeError: Cannot read properties of undefined (reading 'psid')
+    at Function.SendEgainNewMessage (C:\original-coast-clothing\services\egain.
+js:207:23)
+    at C:\original-coast-clothing\app.js:221:42
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visitin
+g:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/253788558082460
+Setting app 739361080693941 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+Subscribing app 739361080693941 to page 253788558082460
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+ customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+ démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vo
+us souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothi
+ng! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automa
+tizados de ejemplo. Si quieres crear una experiencia similar, visita https://fb
+.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name
+}}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automá
+ticos de muestra. Si quieres crear una experiencia similar, visita https://fb.m
+e/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique e
+m Começar para conferir nosso exemplo de experiência de mensagens automáticas.
+Se você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik
+untuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda
+ ingin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على ب
+دء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كن
+ت ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على
+ الويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}
+! Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu
+entdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die
+Seite https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}
+}! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un
+'esperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スター
+ト]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様の
+サービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려
+면 visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_nam
+e}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейди
+те по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องก
+ารสร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! H
+ãy nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự đ
+ộng của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập htt
+ps://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”
+进入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sa
+mple-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 http
+s://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 739361080693941
+Fetching personas for app 739361080693941
+Enable Built-in NLP for Page 253788558082460
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 739361080693941
+Unable to callSubscribedApps: Forbidden {
+  error: {
+    message: '(#200) User does not have sufficient administrative permission fo
+r this action on this page. If the page business requires Two Factor Authentica
+tion, the user also needs to enable Two Factor Authentication.',
+    type: 'OAuthException',
+    code: 200,
+    fbtrace_id: 'AqT5qQ9kKUYsM0xdMHZGLNW'
+  }
+}
+Unable to activate built-in NLP: Bad Request
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '721645425694756',
+    Riandy: '3124492104467419',
+    Laura: '5281949601872552',
+    Jorge: '326133039592794'
+  }
+}
+Request sent.
+WEBHOOK_VERIFIED
+Request sent.
+Request sent.
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660831179200,
+      id: '17841400743894470',
+      messaging: [
+        {
+          sender: { id: '5318009524953006' },
+          recipient: { id: '17841400743894470' },
+          timestamp: 1660831178778,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDAwNzQzODk0NDcwOjM
+0MDI4MjM2Njg0MTcxMDMwMDk0OTEyODIxMzAxOTQ5NTQyNjQyMTozMDYzNjkyNzcwNDU2NDY5NDE4OT
+c3MzM3MDA2MjUzNjcwNAZDZD',
+            text: 'hi'
+          }
+        }
+      ]
+    }
+  ]
+}
+Could not load profile for 5318009524953006: Not Found {
+  error: {
+    message: '(#803) IGSID not found',
+    type: 'OAuthException',
+    code: 803,
+    fbtrace_id: 'AGBL3NVwr52LnE4tVh-U7Uz'
+  }
+}
+C:\original-coast-clothing\services\egain.js:207
+        let psid=user.psid;
+                      ^
+
+TypeError: Cannot read properties of undefined (reading 'psid')
+    at Function.SendEgainNewMessage (C:\original-coast-clothing\services\egain.
+js:207:23)
+    at C:\original-coast-clothing\app.js:221:42
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ ^C
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$ node app.js
+The app is listening on port 4000
+Is this the first time running?
+Make sure to set the both the Messenger profile, persona and webhook by visitin
+g:
+https://f506-197-242-103-120.ngrok.io//profile?mode=all&verify_token=$t@nb1c
+Test your app by messaging:
+https://m.me/253788558082460
+Setting app 739361080693941 callback url to https://f506-197-242-103-120.ngrok.
+io//webhook
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+Subscribing app 739361080693941 to page 253788558082460
+{
+  fields: 'messages, messaging_postbacks, messaging_optins, message_deliveries,
+ messaging_referrals'
+}
+{
+  localizedGreeting: {
+    locale: 'default',
+    text: 'Hello {{user_first_name}}, Click get started to chat with one of our
+ customer care agents.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'fr_FR',
+    text: 'Bienvenue à Original Coast Clothing {{user_first_name}}! Cliquez sur
+ démarrer pour voir notre exemple d’expérience de messagerie automatique. Si vo
+us souhaitez en élaborer une semblable, visitez https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_ES',
+    text: '¡{{user_first_name}}, te damos la bienvenida a Original Coast Clothi
+ng! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automa
+tizados de ejemplo. Si quieres crear una experiencia similar, visita https://fb
+.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'es_LA',
+    text: '¡Te damos la bienvenida a Original Coast Clothing, {{user_first_name
+}}! Haz clic para empezar a disfrutar de nuestra experiencia de mensajes automá
+ticos de muestra. Si quieres crear una experiencia similar, visita https://fb.m
+e/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'pt_BR',
+    text: 'Bem-vindo(a) à Original Coast Clothing {{user_first_name}}! Clique e
+m Começar para conferir nosso exemplo de experiência de mensagens automáticas.
+Se você deseja criar uma semelhante, acesse https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'id_ID',
+    text: 'Selamat datang di Original Coast Clothing {{user_first_name}}! Klik
+untuk mulai menikmati sampel pengalaman berkirim pesan otomatis kami. Jika Anda
+ ingin membuat pengalaman serupa, kunjungi https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ar_AR',
+    text: 'مرحبًا بك في Original Coast Clothing {{user_first_name}}! انقر على ب
+دء الاستخدام للاستمتاع بتجربة المراسلة التلقائية النموذجية التي نوفرها. وإذا كن
+ت ترغب في إنشاء تجربة مماثلة، فتفضل بزيارة موقع https://fb.me/get-sample-oc على
+ الويب'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'de_DE',
+    text: 'Herzlich willkommen bei Original Coast Clothing, {{user_first_name}}
+! Klicke auf „Los geht’s“, um unser Beispiel für automatisierte Nachrichten zu
+entdecken. Wenn du ein ähnliches Kundenerlebnis anbieten möchtest, besuche die
+Seite https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'it_IT',
+    text: "Ti diamo il benvenuto su Original Coast Clothing, {{user_first_name}
+}! Clicca su Inizia per provare i nostri messaggi automatici. Se vuoi creare un
+'esperienza simile, visita https://fb.me/get-sample-oc."
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ja_JP',
+    text: '{{user_first_name}}さん、Original Coast Clothingへようこそ！[スター
+ト]をクリックして、サンプルの自動メッセージングサービスをお試しください。同様の
+サービスを構築する場合はhttps://fb.me/get-sample-ocをご覧ください。'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ko_KR',
+    text: '{{user_first_name}}님, 안녕하세요. Original Coast Clothing입니다! 시
+작하기를 클릭하여 샘플 자동 메시지 기능을 활용해보세요. 비슷한 메시지를 만들려
+면 visit https://fb.me/get-sample-oc를 방문하세요.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'ru_RU',
+    text: 'Добро пожаловать в магазин Original Coast Clothing, {{user_first_nam
+e}}! Нажмите "Начать", чтобы написать нашему боту. Хотите такой же бот? Перейди
+те по адресу https://fb.me/get-sample-oc.'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'th_TH',
+    text: 'ยินดีต้อนรับสู่ Original Coast Clothing {{user_first_name}}! คลิกเริ
+มต้นใช้งานเพื่อทดลองตัวอย่างประสบการณ์การส่งข้อความอัตโนมัติของเรา หากคุณต้องก
+ารสร้างประสบการณ์ที่คล้ายกัน โปรดไปที่ https://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'vi_VN',
+    text: 'Chào mừng bạn đến với Original Coast Clothing {{user_first_name}}! H
+ãy nhấp vào nút Bắt đầu để tận hưởng trải nghiệm nhắn tin mẫu và hoàn toàn tự đ
+ộng của chúng tôi. Nếu bạn muốn xây dựng trải nghiệm tương tự, hãy truy cập htt
+ps://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_CN',
+    text: '欢迎来到 Original Coast Clothing{{user_first_name}}！点击“立即开始”
+进入我们的自动消息体验示例。如果您想打造类似的体验，请访问 https://fb.me/get-sa
+mple-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_HK',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想建立類似的自動訊息，請前往 https:
+//fb.me/get-sample-oc'
+  }
+}
+{
+  localizedGreeting: {
+    locale: 'zh_TW',
+    text: '{{user_first_name}}，歡迎來到 Original Coast Clothing！點擊「立即開
+始」，在範例中體驗我們的自動訊息功能。如果您想要建立類似的自動訊息，請前往 http
+s://fb.me/get-sample-oc'
+  }
+}
+{
+  localizedMenu: {
+    locale: 'default',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'fr_FR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_ES',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'es_LA',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'pt_BR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'id_ID',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ar_AR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'de_DE',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'it_IT',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ja_JP',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ko_KR',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'ru_RU',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'th_TH',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'vi_VN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_CN',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_HK',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+{
+  localizedMenu: {
+    locale: 'zh_TW',
+    composer_input_disabled: false,
+    call_to_actions: [ [Object], [Object], [Object], [Object] ]
+  }
+}
+Setting Messenger Profile for app 739361080693941
+Fetching personas for app 739361080693941
+Enable Built-in NLP for Page 253788558082460
+{
+  whitelistedDomains: {
+    whitelisted_domains: [
+      'https://f506-197-242-103-120.ngrok.io/',
+      'https://f506-197-242-103-120.ngrok.io/'
+    ]
+  }
+}
+Setting Messenger Profile for app 739361080693941
+Unable to activate built-in NLP: Bad Request
+Unable to callSubscribedApps: Forbidden {
+  error: {
+    message: '(#200) User does not have sufficient administrative permission fo
+r this action on this page. If the page business requires Two Factor Authentica
+tion, the user also needs to enable Two Factor Authentication.',
+    type: 'OAuthException',
+    code: 200,
+    fbtrace_id: 'A2dkJyBJhGE6k-gtqQ8YHcI'
+  }
+}
+personas data[object Object],[object Object],[object Object],[object Object]
+{
+  existingPersonas: {
+    Daniel: '721645425694756',
+    Riandy: '3124492104467419',
+    Laura: '5281949601872552',
+    Jorge: '326133039592794'
+  }
+}
+Request sent.
+Request sent.
+WEBHOOK_VERIFIED
+Request sent.
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660831224694,
+      id: '17841400743894470',
+      messaging: [
+        {
+          sender: { id: '17841400743894470' },
+          recipient: { id: '8292644780760449' },
+          timestamp: 1660831223961,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDAwNzQzODk0NDcwOjM
+0MDI4MjM2Njg0MTcxMDMwMDk0OTEyODI2MTgzMjg5Mzc0Mjg4MzozMDYzNjkyODUzODA0NDMzNzUwMD
+U2MTY2MjMzODQwMDI1NgZDZD',
+            text: 'Hi @umkha_143, apologies for the delayed response. Kindly cl
+arify your request. Thank you',
+            is_echo: true
+          }
+        }
+      ]
+    }
+  ]
+}
+Got an echo of our send, mid = aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDAwNz
+QzODk0NDcwOjM0MDI4MjM2Njg0MTcxMDMwMDk0OTEyODI2MTgzMjg5Mzc0Mjg4MzozMDYzNjkyODUzO
+DA0NDMzNzUwMDU2MTY2MjMzODQwMDI1NgZDZD
+� Received webhook:
+{
+  object: 'instagram',
+  entry: [
+    {
+      time: 1660831275421,
+      id: '17841400743894470',
+      messaging: [
+        {
+          sender: { id: '3536035763191982' },
+          recipient: { id: '17841400743894470' },
+          timestamp: 1660831274882,
+          message: {
+            mid: 'aWdfZAG1faXRlbToxOklHTWVzc2FnZAUlEOjE3ODQxNDAwNzQzODk0NDcwOjM
+0MDI4MjM2Njg0MTcxMDMwMDk0OTEyODE5OTU1NjgxNDQyNDQ0MjozMDYzNjkyOTQ3NzM3MTU4Mjc3Mz
+czNjA5ODg4MjM4Nzk2OAZDZD',
+            text: 'This is test for eGain… please disregard on sprout'
+          }
+        }
+      ]
+    }
+  ]
+}
+Could not load profile for 3536035763191982: Not Found {
+  error: {
+    message: '(#803) IGSID not found',
+    type: 'OAuthException',
+    code: 803,
+    fbtrace_id: 'AJd_h5xoZyBEBWwScDFyt37'
+  }
+}
+C:\original-coast-clothing\services\egain.js:207
+        let psid=user.psid;
+                      ^
+
+TypeError: Cannot read properties of undefined (reading 'psid')
+    at Function.SendEgainNewMessage (C:\original-coast-clothing\services\egain.
+js:207:23)
+    at C:\original-coast-clothing\app.js:221:42
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Olumide@DESKTOP-VKK0L3I MINGW64 /c/original-coast-clothing (main)
+$
