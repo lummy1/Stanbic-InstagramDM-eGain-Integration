@@ -1,7 +1,7 @@
 {
-  "name": "original-coast-clothing",
+  "name": "stanbic-instagram-egain-integration",
   "version": "1.0.0",
-  "description": "A sample app to show how to build a great Messenger experience!",
+  "description": "Stanbic instagram eGain integration",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

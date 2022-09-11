@@ -235,7 +235,7 @@ let data = await address.json();
       
       
      
-      //console.log('data.access_token '+data.access_token);
+      console.log('data.access_token '+data.access_token);
       let urls = new URL(`${config.egainUrl}/messaging/configuration?entrypoint=${config.egainEntrypointId}`);
       let head={ 
     "Accept" : "application/json",
@@ -258,11 +258,11 @@ let data = await address.json();
   })
   
   let dat = await rr.json();
-   //console.log('tryPointConfigu '+dat.entryPointConfiguration[0].lastModified.date);
+   console.log('tryPointConfigu '+dat.entryPointConfiguration[0].lastModified.date);
     var body ={
       "entryPointConfiguration": {
         "entryPoint": {
-          "id": "1024"
+          "id": `${config.egainEntrypointId}`
         },
         "lastModified": {
           "date": dat.entryPointConfiguration[0].lastModified.date
@@ -321,7 +321,7 @@ let data = await address.json();
            "content":message
          }
          msg=JSON.stringify(msg)
-          //console.log(msg)
+          console.log(msg)
          
         let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
         
@@ -336,11 +336,11 @@ let data = await address.json();
              
         })
         
-       // let responsemsg = await kk.json();
+        //let responsemsg = await kk.json();
         
        
          
-            //console.log(responsemsg)
+           // console.log(responsemsg)
             //console.log('conversationid'+datum.id)
           //const  conversationid= datum.id;
           return {

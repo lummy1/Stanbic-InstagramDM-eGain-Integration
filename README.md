@@ -1,7 +1,12 @@
 # Original Coast Clothing Messenger Bot
 
-Using this demo as inspiration, you can create a delightful messaging experience that leverages both automation and live customer support. We are also providing the open source code of the app and a guide to deploy the experience on your local environment or remote server.
+Original Coast Clothing (OC) is a fictional clothing brand created to showcase key features of the Messenger Platform. OC leverages key features to deliver a great customer experience. Using this demo as inspiration, you can create a delightful messaging experience that leverages both automation and live customer support. We are also providing the open source code of the app and a guide to deploy the experience on your local environment or remote server.
 
+[Access the Messenger experience](https://m.me/OriginalCoastClothing?ref=GITHUB)
+
+![Messenger Experience](public/experience.png)
+
+See the [Developer Documentations on this experience](https://developers.facebook.com/docs/messenger-platform/getting-started/sample-apps/original-coast-clothing).
 
 # Setting up your Messenger App
 
@@ -36,8 +41,8 @@ Before you begin, make sure you have completed all of the requirements listed ab
 Clone this repository on your local machine:
 
 ```bash
-$ git clone git@github.com:lummy1/Stanbic-InstagramDM-eGain-Integration.git
-$ cd Stanbic-InstagramDM-eGain-Integration
+$ git clone git@github.com:fbsamples/original-coast-clothing.git
+$ cd original-coast-clothing
 ```
 
 You will need:
@@ -186,5 +191,3 @@ See the [CONTRIBUTING](CONTRIBUTING.md) file for how to help out.
 
 Terms of Use - https://opensource.facebook.com/legal/terms
 Privacy Policy - https://opensource.facebook.com/legal/privacy
-"# Stanbic-InstagramDM-eGain-Integration" 
-"# Stanbic-InstagramDM-eGain-Integration" 
