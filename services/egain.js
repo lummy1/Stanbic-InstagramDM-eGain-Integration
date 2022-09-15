@@ -44,6 +44,134 @@
     let psid=user.psid;
     let message=webhookEvent.message.text;
     console.log('Inside  SendEgain Continue  Message for '+user.username  +'and convoid ' +user.convoid);
+
+    if(user.convoid === ""){
+
+      console.log('Create  SendEgain New  Message since convoid is null' );
+
+
+      let url = new URL(`${config.egainUrl}/authentication/oauth2/token?forceLogin=yes`);  
+      let address = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded",
+                "Accept" : "application/json",
+                "Accept-Language" : "en-us",
+               
+                "Authorization":`Basic ${config.egainClientkeySecret}` },
+      body: "grant_type=client_credentials",
+      // form: {
+      //   "grant_type": "client_credentials"
+      // }
+    })
+    
+    let data = await address.json();
+    
+    
+   
+    console.log('data.access_token '+data.access_token);
+    let urls = new URL(`${config.egainUrl}/messaging/configuration?entrypoint=${config.egainEntrypointId}`);
+    let head={ 
+  "Accept" : "application/json",
+  "Accept-Language" : "en-us",
+ 
+  "Authorization": `Bearer  ${data.access_token}` }
+
+  //console.log(head);
+let rr= await fetch(urls, {
+  method: "GET",
+  headers: { 
+            "Accept" : "application/json",
+            "Accept-Language" : "en-us",
+           
+            "Authorization": `Bearer ${data.access_token}` },
+ // body: "grant_type=client_credentials",
+  // form: {
+  //   "grant_type": "client_credentials"
+  // }
+})
+
+let dat = await rr.json();
+ console.log('tryPointConfigu '+dat.entryPointConfiguration[0].lastModified.date);
+  var body ={
+    "entryPointConfiguration": {
+      "entryPoint": {
+        "id": `${config.egainEntrypointId}`
+      },
+      "lastModified": {
+        "date": dat.entryPointConfiguration[0].lastModified.date
+      }
+    },
+    "activity": {
+      "customer": {
+        "type": {
+          "value": "individual"
+        },
+        "contacts": {
+          "contact": [
+            {
+              "firstName": user.name,
+              "social": [
+                {
+                  "type": {
+                    "value": "instagram"
+                  },
+                  "socialId":user.username
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  body=JSON.stringify(body)
+ // console.log(body)
+ 
+let urlses = new URL(`${config.egainUrl}/messaging/conversation/start?searchContactOnAttribute=social.instagramId&conversationContact=social.instagramId`);
+
+let jj= await fetch(urlses, {
+    method: "POST",
+    headers: { 
+              "Accept" : "application/json",
+              "Accept-Language" : "en-us",
+              "Content-Type":"application/json",
+              "Authorization": `Bearer  ${data.access_token}` },
+    body: body
+     
+})
+
+
+let datum = await jj.json();
+   
+ 
+        var msg ={ 
+          "conversation":{ 
+             "id":datum.id
+          },
+          "type":{ 
+             "value":"text/plain"
+          },
+         "content":message
+       }
+       msg=JSON.stringify(msg)
+        console.log(msg)
+       
+      let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
+      
+      let kk= await fetch(urlses1, {
+          method: "POST",
+          headers: { 
+                    "Accept" : "application/json",
+                    "Accept-Language" : "en-us",
+                    "Content-Type":"application/json",
+                    "Authorization": `Bearer  ${data.access_token}` },
+          body: msg
+           
+      })
+
+    }else{
+
+    
     //console.log('user funra e' + JSON.stringify(user));
 //  console.log('user .psid' + user.psid);
 //  console.log('user .firstName' + user.firstName);
@@ -166,20 +294,29 @@ let data = await address.json();
     //return response;
     
   }
+}
   // let responsemsg = await kk.json();
    
   
+  if(user.convoid === ''){
+      convid=datum.id
+  }else{
+    convid = user.convoid
+
+  }
     
        //console.log(responsemsg)
        //console.log('conversationid'+datum.id)
      //const  conversationid= datum.id;
      return {
       id: user.psid,
-       conversationid: user.convoid,
+       conversationid: convid,
        message: message,
        
        username:user.username,
        name:user.name,
+
+                  
      };
 
 
