@@ -360,6 +360,7 @@ app.get("/profile", (req, res) => {
   let token = req.query["verify_token"];
   let mode = req.query["mode"];
 
+  try{
   if (!config.webhookUrl.startsWith("https://")) {
     res.status(200).send("ERROR - Need a proper API_URL in the .env file");
   }
@@ -420,6 +421,9 @@ app.get("/profile", (req, res) => {
     // Returns a '404 Not Found' if mode or token are missing
     res.sendStatus(404);
   }
+} catch (e) {
+  console.error("Error: ", e);
+}
 });
 
 // Verify that the callback came from Facebook.
