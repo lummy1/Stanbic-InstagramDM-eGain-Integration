@@ -47,7 +47,7 @@
 
     if(user.convoid === ""){
 
-      console.log('Create  SendEgain New  Message if convoid is null' );
+      console.log('Create  SendEgain New  Message since convoid is null' );
 
 
       let url = new URL(`${config.egainUrl}/authentication/oauth2/token?forceLogin=yes`);  
@@ -69,101 +69,101 @@
     
    
     console.log('data.access_token '+data.access_token);
-//     let urls = new URL(`${config.egainUrl}/messaging/configuration?entrypoint=${config.egainEntrypointId}`);
+    let urls = new URL(`${config.egainUrl}/messaging/configuration?entrypoint=${config.egainEntrypointId}`);
     
 
-//   //console.log(head);
-// let rr= await fetch(urls, {
-//   method: "GET",
-//   headers: { 
-//             "Accept" : "application/json",
-//             "Accept-Language" : "en-us",
+  //console.log(head);
+let rr= await fetch(urls, {
+  method: "GET",
+  headers: { 
+            "Accept" : "application/json",
+            "Accept-Language" : "en-us",
            
-//             "Authorization": `Bearer ${data.access_token}` },
-//  // body: "grant_type=client_credentials",
-//   // form: {
-//   //   "grant_type": "client_credentials"
-//   // }
-// })
+            "Authorization": `Bearer ${data.access_token}` },
+ // body: "grant_type=client_credentials",
+  // form: {
+  //   "grant_type": "client_credentials"
+  // }
+})
 
-// let dat = await rr.json();
+let dat = await rr.json();
 
-//   var body ={
-//     "entryPointConfiguration": {
-//       "entryPoint": {
-//         "id": `${config.egainEntrypointId}`
-//       },
-//       "lastModified": {
-//         "date": dat.entryPointConfiguration[0].lastModified.date
-//       }
-//     },
-//     "activity": {
-//       "customer": {
-//         "type": {
-//           "value": "individual"
-//         },
-//         "contacts": {
-//           "contact": [
-//             {
-//               "firstName": user.name,
-//               "social": [
-//                 {
-//                   "type": {
-//                     "value": "instagram"
-//                   },
-//                   "socialId":user.username
-//                 }
-//               ]
-//             }
-//           ]
-//         }
-//       }
-//     }
-//   }
-//   body=JSON.stringify(body)
-//  // console.log(body)
+  var body ={
+    "entryPointConfiguration": {
+      "entryPoint": {
+        "id": `${config.egainEntrypointId}`
+      },
+      "lastModified": {
+        "date": dat.entryPointConfiguration[0].lastModified.date
+      }
+    },
+    "activity": {
+      "customer": {
+        "type": {
+          "value": "individual"
+        },
+        "contacts": {
+          "contact": [
+            {
+              "firstName": user.name,
+              "social": [
+                {
+                  "type": {
+                    "value": "instagram"
+                  },
+                  "socialId":user.username
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  body=JSON.stringify(body)
+ // console.log(body)
  
-// let urlses = new URL(`${config.egainUrl}/messaging/conversation/start?searchContactOnAttribute=social.instagramId&conversationContact=social.instagramId`);
+let urlses = new URL(`${config.egainUrl}/messaging/conversation/start?searchContactOnAttribute=social.instagramId&conversationContact=social.instagramId`);
 
-// let jj= await fetch(urlses, {
-//     method: "POST",
-//     headers: { 
-//               "Accept" : "application/json",
-//               "Accept-Language" : "en-us",
-//               "Content-Type":"application/json",
-//               "Authorization": `Bearer  ${data.access_token}` },
-//     body: body
+let jj= await fetch(urlses, {
+    method: "POST",
+    headers: { 
+              "Accept" : "application/json",
+              "Accept-Language" : "en-us",
+              "Content-Type":"application/json",
+              "Authorization": `Bearer  ${data.access_token}` },
+    body: body
      
-// })
+})
 
 
-// let datum = await jj.json();
+let datum = await jj.json();
    
  
-//         var msg ={ 
-//           "conversation":{ 
-//              "id":datum.id
-//           },
-//           "type":{ 
-//              "value":"text/plain"
-//           },
-//          "content":message
-//        }
-//        msg=JSON.stringify(msg)
-//         console.log(msg)
+        var msg ={ 
+          "conversation":{ 
+             "id":datum.id
+          },
+          "type":{ 
+             "value":"text/plain"
+          },
+         "content":message
+       }
+       msg=JSON.stringify(msg)
+        console.log(msg)
        
-//       let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
+      let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
       
-//       let kk= await fetch(urlses1, {
-//           method: "POST",
-//           headers: { 
-//                     "Accept" : "application/json",
-//                     "Accept-Language" : "en-us",
-//                     "Content-Type":"application/json",
-//                     "Authorization": `Bearer  ${data.access_token}` },
-//           body: msg
+      let kk= await fetch(urlses1, {
+          method: "POST",
+          headers: { 
+                    "Accept" : "application/json",
+                    "Accept-Language" : "en-us",
+                    "Content-Type":"application/json",
+                    "Authorization": `Bearer  ${data.access_token}` },
+          body: msg
            
-//       })
+      })
 
     }else{
 
@@ -194,106 +194,102 @@
 
 let data = await address.json();
 
-console.log('data.access_token in new egain msg '+data.access_token);
-
-
-
-//   let msgs=webhookEvent.message;
-//         if (msgs.text) {
-//    //console.log(JSON.stringify(user));
+  let msgs=webhookEvent.message;
+        if (msgs.text) {
+   //console.log(JSON.stringify(user));
    
  
  
 
-//  //console.log('data.access_token '+data.access_token);
+ //console.log('data.access_token '+data.access_token);
  
 
-//      var msg ={ 
-//        "conversation":{ 
-//           "id":user.convoid
-//        },
-//        "type":{ 
-//           "value":"text/plain"
-//        },
-//       "content":message
-//     }
-//     msg=JSON.stringify(msg)
-//      //console.log(msg)
+     var msg ={ 
+       "conversation":{ 
+          "id":user.convoid
+       },
+       "type":{ 
+          "value":"text/plain"
+       },
+      "content":message
+    }
+    msg=JSON.stringify(msg)
+     //console.log(msg)
     
-//    let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
+   let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
    
-//    let kk= await fetch(urlses1, {
-//        method: "POST",
-//        headers: { 
-//                  "Accept" : "application/json",
-//                  "Accept-Language" : "en-us",
-//                  "Content-Type":"application/json",
-//                  "Authorization": `Bearer  ${data.access_token}` },
-//        body: msg
+   let kk= await fetch(urlses1, {
+       method: "POST",
+       headers: { 
+                 "Accept" : "application/json",
+                 "Accept-Language" : "en-us",
+                 "Content-Type":"application/json",
+                 "Authorization": `Bearer  ${data.access_token}` },
+       body: msg
         
-//    })
+   })
    
 
-//   }else if (msgs.attachments) {
-//     let attachment = msgs.attachments[0];
-//     let type=attachment.type;
-//     let url=attachment.payload.url;
-//     let response;
+  }else if (msgs.attachments) {
+    let attachment = msgs.attachments[0];
+    let type=attachment.type;
+    let url=attachment.payload.url;
+    let response;
 
-//     var msg = { 
-//       "conversation":{ 
-//        "id":user.convoid
-//     },
-//     "type":{ 
-//        "value":"uploadAttachment"
-//     },
-//     "attachments":{ 
-//        "attachment":[ 
-//           { 
-//              "fileName":"offers.jpeg",
-//              "contentType":"image/jpeg",
-//              "size":"32",
-//              "contentUrl":url
-//           }
-//        ]
-//     }
-//  }
+    var msg = { 
+      "conversation":{ 
+       "id":user.convoid
+    },
+    "type":{ 
+       "value":"uploadAttachment"
+    },
+    "attachments":{ 
+       "attachment":[ 
+          { 
+             "fileName":"offers.jpeg",
+             "contentType":"image/jpeg",
+             "size":"32",
+             "contentUrl":url
+          }
+       ]
+    }
+ }
   
-//    msg=JSON.stringify(msg)
-//     //console.log(msg)
+   msg=JSON.stringify(msg)
+    //console.log(msg)
    
-//   let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
+  let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
   
-//   let kk= await fetch(urlses1, {
-//       method: "POST",
-//       headers: { 
-//                 "Accept" : "application/json",
-//                 "Accept-Language" : "en-us",
-//                 "Content-Type":"application/json",
-//                 "Authorization": `Bearer  ${data.access_token}` },
-//       body: msg
+  let kk= await fetch(urlses1, {
+      method: "POST",
+      headers: { 
+                "Accept" : "application/json",
+                "Accept-Language" : "en-us",
+                "Content-Type":"application/json",
+                "Authorization": `Bearer  ${data.access_token}` },
+      body: msg
        
-//   })
-//     // Get the attachment
-//     let daas = await kk.json();
-//     console.log("Received attachment:", `${JSON.stringify(msgs.attachments)} for ${psid}`);
-//     console.log('type '+JSON.stringify(daas)+ ' url ');
-//     console.log("Received attachment:", `${JSON.stringify(attachment)} for ${psid}`);
+  })
+    // Get the attachment
+    let daas = await kk.json();
+    console.log("Received attachment:", `${JSON.stringify(msgs.attachments)} for ${psid}`);
+    console.log('type '+JSON.stringify(daas)+ ' url ');
+    console.log("Received attachment:", `${JSON.stringify(attachment)} for ${psid}`);
 
-//     response = Response.genQuickReply(i18n.__("fallback.attachment"), [
-//       {
-//         title: i18n.__("menu.help"),
-//         payload: "CARE_HELP"
-//       },
-//       {
-//         title: i18n.__("menu.start_over"),
-//         payload: "GET_STARTED"
-//       }
-//     ]);
+    response = Response.genQuickReply(i18n.__("fallback.attachment"), [
+      {
+        title: i18n.__("menu.help"),
+        payload: "CARE_HELP"
+      },
+      {
+        title: i18n.__("menu.start_over"),
+        payload: "GET_STARTED"
+      }
+    ]);
 
-//     //return response;
+    //return response;
     
-//   }
+  }
 }
   // let responsemsg = await kk.json();
    
