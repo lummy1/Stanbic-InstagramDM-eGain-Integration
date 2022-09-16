@@ -108,7 +108,7 @@ app.post("/webhook", (req, res) => {
   
   
   
-  
+  try{
   // Check if this is an event from a page subscription
   if (body.object === "page" || body.object === "instagram" ) {
     // Returns a '200 OK' response to all requests
@@ -298,10 +298,7 @@ app.post("/webhook", (req, res) => {
 
     });
   
-  }
-  
-
-  else if(body.message[0]!=''){
+  }else if(body.message[0]!=''){
    console.log('user k in egain body msg'+JSON.stringify(userk));
   // console.log('user m in egain body msg'+JSON.stringify(userm));
      let egainmsgjson=body.message[0];
@@ -353,6 +350,11 @@ var userks='';
     // Return a '404 Not Found' if event is not from a page subscription
     res.sendStatus(404);
   }
+} catch (e) {
+  console.error("Error: ", e);
+}
+
+
 });
 
 // Set up your App's Messenger Profile
