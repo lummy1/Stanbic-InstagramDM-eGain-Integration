@@ -292,9 +292,9 @@ let data = await address.json();
   }
 }
   // let responsemsg = await kk.json();
-   
+  let convid=""
   
-  if(user.convoid === ''){
+  if(user.convoid === ""){
       convid=datum.id
   }else{
     convid = user.convoid
