@@ -44,7 +44,7 @@
     let psid=user.psid;
     let message=webhookEvent.message.text;
     console.log('Inside  SendEgain Continue  Message for '+user.username  +'and convoid ' +user.convoid);
-
+     try{
     if(user.convoid === ""){
 
       console.log('Create  SendEgain New  Message since convoid is null' );
@@ -165,7 +165,7 @@ let datum = await jj.json();
            
       })
      
-      
+
     }else{
 
     
@@ -316,31 +316,17 @@ let data = await address.json();
                   
      };
 
+    } catch (e) {
+      console.error("Error: ", e);
+    }
 
-
-
-
-
-//   const printAddress = async () => {
-//     const a = await address;
-
-//     console.log('returned val'+a);
-//     return a;
-//   };
-
-//   // const printentrypoint= async () => {
-//   //   const a = await entrypoint;
-//   //   console.log(a);
-//   // };
-
-//   printAddress();
 
 }
 
     static async  SendEgainNewMessage(user,webhookEvent) {
         let psid=user.psid;
         let message=webhookEvent.message.text;
-
+  try{
    
         console.log('Inside  SendEgain New  Message' );
     //  console.log('user.psid ' + user.psid);
@@ -490,7 +476,9 @@ let data = await address.json();
         timezone: user.timezone
           };
  
-  
+        } catch (e) {
+          console.error("Error: ", e);
+        }
       }
 
 
