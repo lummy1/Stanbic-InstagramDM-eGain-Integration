@@ -218,33 +218,33 @@ app.post("/webhook", (req, res) => {
             users[senderPsid] = user;
            // console.log(`Created new user profile:`);
            // console.log({ user });
-
-          }
-          let messageProfile=await Egain.SendEgainNewMessage(users[senderPsid],webhookEvent);
-          let converId=messageProfile.conversationid;
-          if (messageProfile) {
-            let user = new User(messageProfile.id);
-            //console.log({ messageProfile });
-            user.setProfile(messageProfile);
-           
-            users[senderPsid]=user;
-            userk = users[senderPsid];
-
-            if (!(converId in userj)) {
-            let user1 = new User(messageProfile.conversationid);
+           let messageProfile=await Egain.SendEgainNewMessage(users[senderPsid],webhookEvent);
+           let converId=messageProfile.conversationid;
+           if (messageProfile) {
+             let user = new User(messageProfile.id);
+             //console.log({ messageProfile });
+             user.setProfile(messageProfile);
             
-            user1.setProfile(messageProfile);
-            userj[converId]=user1;
-           
-            userm=userj[converId];
-            }
-            console.log(`updated user profile:`);
-              console.log({ userk });
-              //console.log({ userm });
-              
-  
-              //console.log('comvo'+users[senderPsid].psid);
+             users[senderPsid]=user;
+             userk = users[senderPsid];
+ 
+             if (!(converId in userj)) {
+             let user1 = new User(messageProfile.conversationid);
+             
+             user1.setProfile(messageProfile);
+             userj[converId]=user1;
+            
+             userm=userj[converId];
+             }
+             console.log(`updated user profile:`);
+               console.log({ userk });
+               //console.log({ userm });
+               
+   
+               //console.log('comvo'+users[senderPsid].psid);
+           }
           }
+          
           
          
         }else{
