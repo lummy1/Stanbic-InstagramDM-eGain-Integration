@@ -43,6 +43,7 @@
    static async  SendEgainContinueMessage(user,webhookEvent) {
     let psid=user.psid;
     let message=webhookEvent.message.text;
+    let convid=""
     console.log('Inside  SendEgain Continue  Message for '+user.username  +'and convoid ' +user.convoid);
      try{
     if(user.convoid === ""){
@@ -138,7 +139,7 @@ let jj= await fetch(urlses, {
 
 
 let datum = await jj.json();
-   
+  convid=datum.id;
  
         var msg ={ 
           "conversation":{ 
@@ -168,7 +169,7 @@ let datum = await jj.json();
 
     }else{
 
-    
+      convid = user.convoid;
     //console.log('user funra e' + JSON.stringify(user));
 //  console.log('user .psid' + user.psid);
 //  console.log('user .firstName' + user.firstName);
@@ -293,14 +294,12 @@ let data = await address.json();
   }
 }
   // let responsemsg = await kk.json();
-  let convid=""
-  console.log('conversationid'+datum.id)
-  if(user.convoid === ""){
-      convid=datum.id
-  }else{
-    convid = user.convoid
+  
+ // console.log('conversationid'+datum.id)
+  
+   
 
-  }
+  
     
        //console.log(responsemsg)
        
