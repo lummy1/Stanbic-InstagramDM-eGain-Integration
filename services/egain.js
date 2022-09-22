@@ -248,7 +248,7 @@ let data = await address.json();
     "attachments":{ 
        "attachment":[ 
           { 
-             "fileName":"offers.jpeg",
+             "fileName":"attachment.jpeg",
              "contentType":"image/jpeg",
              "size":"32",
              "contentUrl":url
@@ -295,13 +295,14 @@ let data = await address.json();
 }
   // let responsemsg = await kk.json();
   
+ 
  // console.log('conversationid'+datum.id)
   
    
 
   
     
-       //console.log(responsemsg)
+       console.log('conversationid'+convid)
        
      //const  conversationid= datum.id;
      return {
