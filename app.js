@@ -108,12 +108,13 @@ app.post("/webhook", (req, res) => {
   
   
   
-  try{
+ 
   // Check if this is an event from a page subscription
   if (body.object === "page" || body.object === "instagram" ) {
     // Returns a '200 OK' response to all requests
     //res.status(200).send("EVENT_RECEIVED");
 
+    try{
     // Iterate over each entry - there may be multiple if batched
     body.entry.forEach(async function(entry) {
 
@@ -285,7 +286,7 @@ app.post("/webhook", (req, res) => {
         }
            // let newSenderPsid=users[senderPsid].psid;
         //console.log("sender psid= " + JSON.stringify(users));
-        i18n.setLocale(users[senderPsid].locale);
+        //i18n.setLocale(users[senderPsid].locale);
         //console.log("suserscheck=1 " +  JSON.stringify(users[newSenderPsid]));
         //users[nsenderPsid] = user;
         
@@ -299,8 +300,13 @@ app.post("/webhook", (req, res) => {
 
 
     });
-  
+  } catch (e) {
+    console.error("Error: ", e);
+  }
+
   }else if(body.message[0]!=''){
+
+    try{
    console.log('user k in egain body msg'+JSON.stringify(userk));
   // console.log('user m in egain body msg'+JSON.stringify(userm));
      let egainmsgjson=body.message[0];
@@ -347,14 +353,15 @@ var userks='';
 
     //}
 
-
+  } catch (e) {
+    console.error("Error: ", e);
+  }
+  
   } else {
     // Return a '404 Not Found' if event is not from a page subscription
     res.sendStatus(404);
   }
-} catch (e) {
-  console.error("Error: ", e);
-}
+
 
 
 });
