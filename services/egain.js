@@ -197,7 +197,36 @@ let datum = await jj.json();
 let data = await address.json();
 
   let msgs=webhookEvent.message;
-        if (msgs.text) {
+
+  if (msgs.is_deleted===true) {
+
+    var msg ={ 
+      "conversation":{ 
+         "id":user.convoid
+      },
+      "type":{ 
+         "value":"text/plain"
+      },
+     "content":"The message has been deleted"
+   }
+   msg=JSON.stringify(msg)
+    //console.log(msg)
+   
+  let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
+  
+  let kk= await fetch(urlses1, {
+      method: "POST",
+      headers: { 
+                "Accept" : "application/json",
+                "Accept-Language" : "en-us",
+                "Content-Type":"application/json",
+                "Authorization": `Bearer  ${data.access_token}` },
+      body: msg
+       
+  })
+
+
+  }else if (msgs.text) {
    //console.log(JSON.stringify(user));
    
  
