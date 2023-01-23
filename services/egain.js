@@ -326,6 +326,7 @@ let data = await address.json();
     static async  SendEgainNewMessage(user,webhookEvent) {
         let psid=user.psid;
         let message=webhookEvent.message.text;
+        let msgs=webhookEvent.message;
   try{
    
         console.log('Inside  SendEgain New  Message' );
@@ -337,6 +338,8 @@ let data = await address.json();
         //console.log('msg '+message);
     
         //console.log(JSON.stringify(user));
+
+
         let url = new URL(`${config.egainUrl}/authentication/oauth2/token?forceLogin=yes`);  
         let address = await fetch(url, {
         method: "POST",
@@ -430,7 +433,7 @@ let data = await address.json();
   
   let datum = await jj.json();
      
-   
+  if (msgs.text) {
           var msg ={ 
             "conversation":{ 
                "id":datum.id
@@ -440,9 +443,35 @@ let data = await address.json();
             },
            "content":message
          }
-         msg=JSON.stringify(msg)
-          console.log(msg)
-         
+        
+        }else if (msgs.attachments) {
+          let attachment = msgs.attachments[0];
+          let type=attachment.type;
+          let url=attachment.payload.url;
+          let response;
+      
+          var msg = { 
+            "conversation":{ 
+             "id":datum.id
+          },
+          "type":{ 
+             "value":"uploadAttachment"
+          },
+          "attachments":{ 
+             "attachment":[ 
+                { 
+                   "fileName":"attachment.jpeg",
+                   "contentType":"image/jpeg",
+                   "size":"32",
+                   "contentUrl":url
+                }
+             ]
+          }
+       }
+      }
+
+      msg=JSON.stringify(msg)
+      console.log(msg)
         let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
         
         let kk= await fetch(urlses1, {
