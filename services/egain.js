@@ -267,25 +267,40 @@ let data = await address.json();
     let url=attachment.payload.url;
     let response;
 
-    var msg = { 
-      "conversation":{ 
-       "id":user.convoid
-    },
-    "type":{ 
-       "value":"uploadAttachment"
-    },
-    "attachments":{ 
-       "attachment":[ 
-          { 
-             "fileName":"attachment.jpeg",
-             "contentType":"image/jpeg",
-             "size":"32",
-             "contentUrl":url
-          }
-       ]
-    }
- }
+//     var msg = { 
+//       "conversation":{ 
+//        "id":user.convoid
+//     },
+//     "type":{ 
+//        "value":"uploadAttachment"
+//     },
+//     "attachments":{ 
+//        "attachment":[ 
+//           { 
+//              "fileName":"attachment.jpeg",
+//              "contentType":"image/jpeg",
+//              "size":"32",
+//              "contentUrl":url
+//           }
+//        ]
+//     }
+//  }
   
+
+var msg ={ 
+  "conversation":{ 
+     "id":user.convoid
+  },
+  "type":{ 
+     "value":"text/plain"
+  },
+ "content":url
+}
+msg=JSON.stringify(msg)
+
+
+
+
    msg=JSON.stringify(msg)
     //console.log(msg)
    
@@ -479,24 +494,38 @@ let data = await address.json();
           let url=attachment.payload.url;
           let response;
       
-          var msg = { 
-            "conversation":{ 
-             "id":datum.id
-          },
-          "type":{ 
-             "value":"uploadAttachment"
-          },
-          "attachments":{ 
-             "attachment":[ 
-                { 
-                   "fileName":"attachment.jpeg",
-                   "contentType":"image/jpeg",
-                   "size":"32",
-                   "contentUrl":url
-                }
-             ]
-          }
-       }
+      //     var msg = { 
+      //       "conversation":{ 
+      //        "id":datum.id
+      //     },
+      //     "type":{ 
+      //        "value":"uploadAttachment"
+      //     },
+      //     "attachments":{ 
+      //        "attachment":[ 
+      //           { 
+      //              "fileName":"attachment.jpeg",
+      //              "contentType":"image/jpeg",
+      //              "size":"32",
+      //              "contentUrl":url
+      //           }
+      //        ]
+      //     }
+      //  }
+
+
+       var msg ={ 
+        "conversation":{ 
+           "id":datum.id
+        },
+        "type":{ 
+           "value":"text/plain"
+        },
+       "content":url
+      }
+      
+
+
       }
 
       msg=JSON.stringify(msg)
