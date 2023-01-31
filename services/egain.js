@@ -267,36 +267,38 @@ let data = await address.json();
     let url=attachment.payload.url;
     let response;
 
-    var msg = { 
-      "conversation":{ 
-       "id":user.convoid
-    },
-    "type":{ 
-       "value":"uploadAttachment"
-    },
-    "attachments":{ 
-       "attachment":[ 
-          { 
-             "fileName":"attachment.jpeg",
-             "contentType":"image/jpeg",
-             "size":"32",
-             "contentUrl":url
-          }
-       ]
-    }
- }
+//     var msg = { 
+//       "conversation":{ 
+//        "id":user.convoid
+//     },
+//     "type":{ 
+//        "value":"uploadAttachment"
+//     },
+//     "attachments":{ 
+//        "attachment":[ 
+//           { 
+//              "fileName":"attachment.jpeg",
+//              "contentType":"image/jpeg",
+//              "size":"32",
+//              "contentUrl":url
+//           }
+//        ]
+//     }
+//  }
   
 console.log('url1' +url)
-// var msg ={ 
-//   "conversation":{ 
-//      "id":user.convoid
-//   },
-//   "type":{ 
-//      "value":"text/plain"
-//   },
-//  "content":url
-// }
-msg=JSON.stringify(msg)
+var msg ={ 
+  "conversation":{ 
+     "id":user.convoid
+  },
+  "type":{ 
+     "value":"text/plain"
+  },
+ "content":url
+}
+
+
+//msg=JSON.stringify(msg)
 
 
 
@@ -494,41 +496,41 @@ msg=JSON.stringify(msg)
           let url=attachment.payload.url;
           let response;
       
-          var msg = { 
-            "conversation":{ 
-             "id":datum.id
-          },
-          "type":{ 
-             "value":"uploadAttachment"
-          },
-          "attachments":{ 
-             "attachment":[ 
-                { 
-                   "fileName":"attachment.jpeg",
-                   "contentType":"image/jpeg",
-                   "size":"32",
-                   "contentUrl":url
-                }
-             ]
-          }
-       }
+      //     var msg = { 
+      //       "conversation":{ 
+      //        "id":datum.id
+      //     },
+      //     "type":{ 
+      //        "value":"uploadAttachment"
+      //     },
+      //     "attachments":{ 
+      //        "attachment":[ 
+      //           { 
+      //              "fileName":"attachment.jpeg",
+      //              "contentType":"image/jpeg",
+      //              "size":"32",
+      //              "contentUrl":url
+      //           }
+      //        ]
+      //     }
+      //  }
 
       console.log('url2' +url)
-      //  var msg ={ 
-      //   "conversation":{ 
-      //      "id":datum.id
-      //   },
-      //   "type":{ 
-      //      "value":"text/plain"
-      //   },
-      //  "content":url
-      // }
+       var msg ={ 
+        "conversation":{ 
+           "id":datum.id
+        },
+        "type":{ 
+           "value":"text/plain"
+        },
+       "content":url
+      }
       
 
 
       // }
 
-      msg=JSON.stringify(msg)
+      //msg=JSON.stringify(msg)
       console.log('mesg  ' +msg)
         let urlses1 = new URL(`${config.egainUrl}/messaging/sendmessage`);
         
