@@ -11,21 +11,28 @@
 "use strict";
 
 const { response } = require("express");
-
+//const nodeUuid = require('uuid');
+//const  mongoose = require("mongoose");
 // Import dependencies and set up http server
 const express = require("express"),
+
   { urlencoded, json } = require("body-parser"),
   crypto = require("crypto"),
   path = require("path"),
+  //User = require("./services/user.model"),
   Response = require("./services/response"),
-
+  User = require("./services/user"),
+  DefaultConfig = require("./services/default-config"),
   Receive = require("./services/receive"),
   GraphApi = require("./services/graph-api"),
   Egain = require("./services/egain"),
-  User = require("./services/user"),
+  
   Convo = require("./services/convo"),
   config = require("./services/config"),
   i18n = require("./i18n.config"),
+
+
+  
   app = express();
 
 var users = {};
@@ -49,33 +56,94 @@ app.use(express.static(path.join(path.resolve(), "public")));
 // Set template engine in Express
 app.set("view engine", "ejs");
 
+
+
+
+
+	// mongoose.Promise = global.Promise
+	
+	// mongoose.connect(config.mongoUri, { useNewUrlParser: true,
+	// //useCreateIndex: true, 
+	// //useUnifiedTopology: true 
+	// } ).then(()=>{
+	// 	console.log("mongodb database connected")
+	// })
+	// mongoose.connection.on('error', () => {
+	// throw new Error(`unable to connect to database: ${config.mongoUri}`) 
+	// });
+
+
 // Respond with index file when a GET request is made to the homepage
 app.get("/", function(_req, res) {
   res.render("index");
 });
 
+// //lummy handle Authentication POst endpoint
+//  app.post("/authentication", async (req, res) => {
+//   //let users = new User(req.body);
+//   // res.status(200).send();
+//   let search = await User.find().select('basicAuth.username basicAuth.password');
+//   //let search = await User.find();
+//   let users = new User(req.body);
+//   console.log(search[0].basicAuth.username);
+//   console.log(search[0].basicAuth.password);
+//   console.log(users.basicAuth.username);
+//   console.log(users.basicAuth.password);
 
-//lummy Egain Agent message POst endpoint
+  
+//   if(search[0].basicAuth.username==users.basicAuth.username && search[0].basicAuth.password==users.basicAuth.password){
+//     console.log('correct');
+//     var uuid = nodeUuid.v4();
+//     users.token = uuid;
+//     users.save();
+//   }else{
+
+//     return res.json(
+      
+//       {message: "wrong username and password"}
+//     );
+//   }
+
+//   return res.json(users.token);
+ 
+// });
+
+
+//lummy Egain Agent message Post endpoint
 app.post("/agentmsg", (req, res) => {
   let body = req.body;
   res.status(200).send();
-  //console.log(body.message[0].content);
+  console.log(`\u{1F7EA}egain reply message  object`);
+      
+      //console.dir(body, { depth: null });
+  // console.log(body.message[0].content);
   
-  let content=body.message[0];
-  let conversationid=body.message[0].conversation.id;
+  let content=body.messages.message[0];
+  let conversationid=content.conversation.id;
   //console.log(body.message[0].conversation.id);
   
-  let egainsender=body.message[0].sender.type;
+  let egainsender=content.sender.type;
+  let egainsendername=content.sender.participant.name;
   console.log(`\u{1F7EA}egain agent msg`);
-  console.log('senderPsid_rec2'+ senderPsid_rec)
+ // console.log('senderPsid_rec2'+ senderPsid_rec)
   console.dir(body, { depth: null });
+ 
   
+console.log(egainsender + ' '+egainsendername)
   //return Receive.handleEgainMessage(egainsender,content,egainmsgid);
-  let receiveMessage = new Receive(senderPsid_rec,content);
-  return receiveMessage.handleEgainContinueMessage();
+  //let receiveMessage = new Receive(senderPsid_rec,content);
+  let receiveMessage = new Receive(body,content);
+      return receiveMessage.handleEgain2InstagramMessage();
+  //return receiveMessage.handleEgainContinueMessage();
 })
 
+//use to setup default
+app.get("/default_config", async (req, res) => {
 
+  let val=  await DefaultConfig.GetDefaultEgainConfig();
+  console.log(val);
+  res.send(val);
+});
 // Add support for GET requests to our webhook
 app.get("/webhook", (req, res) => {
   // Parse the query params
@@ -102,12 +170,9 @@ app.post("/webhook", (req, res) => {
   let body = req.body;
   res.status(200).send("EVENT_RECEIVED");
   //console.log(body.object);
-  console.log(`\u{1F7EA} Received webhook:`);
-  console.dir(body, { depth: null });
- 
-  
-  
-  
+  // console.log(`\u{1F7EA} Received webhook:`);
+  // console.dir(body, { depth: null });
+
  
   // Check if this is an event from a page subscription
   if (body.object === "page" || body.object === "instagram" ) {
@@ -144,6 +209,7 @@ app.post("/webhook", (req, res) => {
         let receiveMessage = new Receive();
         if (entry.changes[0].field === "comments") {
           let change = entry.changes[0].value;
+                   
           switch (change.media.media_product_type) {
             case "FEED":
               return receiveMessage.handlePrivateReply(
@@ -191,21 +257,27 @@ app.post("/webhook", (req, res) => {
         // Discard uninteresting events
         if ("read" in webhookEvent) {
           console.log("Got a read event");
-          return;
+         // return;
         } else if ("delivery" in webhookEvent) {
           console.log("Got a delivery event");
-          return;
+          //return;
         } else if (webhookEvent.message && webhookEvent.message.is_echo) {
           console.log("Got an echo of our send, mid = " + webhookEvent.message.mid);
-          return;
+          //return;
         }
 
+        // console.log("Got2 an echo of our send, mid = " + webhookEvent.message.mid);
+        //   console.log('got'+webhookEvent.sender.id);
         // Get the sender PSID
         let senderPsid = webhookEvent.sender.id;
         //let userscheck=users;
        // console.log("sender psid=1 " + JSON.stringify(users));
         //let senderPsid_check = webhookEvent.sender.id;
         
+        // console.log(`\u{1F7EA} New change:`);
+        //   console.log(webhookEvent.sender.id);
+
+
         if (webhookEvent.message!=undefined) {
         if (!(senderPsid in users)) {
           // First time seeing this user
@@ -304,7 +376,7 @@ app.post("/webhook", (req, res) => {
     console.error("Error: ", e);
   }
 
-  }else if(body.message[0]!=''){
+  }else if(body.messages.message[0]!=''){
 
     try{
    console.log('user k in egain body msg'+JSON.stringify(userk));

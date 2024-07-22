@@ -49,7 +49,7 @@ module.exports = class GraphApi {
       body: JSON.stringify(requestBody)
     });
     if (response.ok) {
-      console.log(`Request sent.`);
+      console.log(`Request sent1.`);
     } else {
       console.warn(
         `Unable to callMessengerProfileAPI: ${response.statusText}`,

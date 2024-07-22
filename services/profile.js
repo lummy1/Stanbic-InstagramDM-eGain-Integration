@@ -50,7 +50,7 @@ module.exports = class Profile {
       });
     }
     let existingPersonas = config.personas;
-    console.log({ existingPersonas });
+    //console.log({ existingPersonas });
 
     for (let persona of newPersonas) {
       if (!(persona.name in existingPersonas)) {
@@ -62,7 +62,7 @@ module.exports = class Profile {
           name: persona.name,
           id: personaId
         });
-        console.log(config.personas);
+        //console.log(config.personas);
       }
     }
   }
@@ -131,7 +131,7 @@ module.exports = class Profile {
       })
     };
 
-    console.log({ localizedGreeting });
+   // console.log({ localizedGreeting });
     return localizedGreeting;
   }
 
@@ -168,7 +168,7 @@ module.exports = class Profile {
       ]
     };
 
-    console.log({ localizedMenu });
+    //console.log({ localizedMenu });
     return localizedMenu;
   }
 

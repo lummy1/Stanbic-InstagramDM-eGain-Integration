@@ -1,6 +1,6 @@
 {
   "profile": {
-    "greeting": "Hello {{user_first_name}}, Click get started to chat with one of our customer care agents."
+    "greeting": "Hello {{user_first_name}}, click to chat"
   },
   "menu": {
     "order": "Order updates",

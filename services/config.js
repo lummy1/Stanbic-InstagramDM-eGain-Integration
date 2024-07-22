@@ -22,9 +22,12 @@ const ENV_VARS = [
   "VERIFY_TOKEN",
   "APP_URL",
   "SHOP_URL",
- "EGAIN_URL",
+ 
  "EGAIN_ENTRY_POINT_ID",
- "EGAIN_ENCODED_KEY_SECRET"
+ "EGAIN_ENCODED_KEY_SECRET",
+
+
+ 
 ];
 
 module.exports = {
@@ -36,30 +39,50 @@ module.exports = {
  
 
 
-  // Page and Application information
+  // Meta Page and Application information
   pageId: process.env.PAGE_ID,
   appId: process.env.APP_ID,
   pageAccesToken: process.env.PAGE_ACCESS_TOKEN,
   appSecret: process.env.APP_SECRET,
   verifyToken: process.env.VERIFY_TOKEN,
+ 
+//URL to get eGain access token
+egainGetTokenUrl: process.env.EGAIN_GET_TOKEN_URL,
 
 
   // URL of your egain environment
-    egainUrl: process.env.EGAIN_URL,
+    egainAPiUrl: process.env.EGAIN_API_URL,
 
     //egain entrypoint
     egainEntrypointId: process.env.EGAIN_ENTRY_POINT_ID,
 
-     //egain encoded clientkey and Secret
+     //egain dafault encoded clientkey and Secret
      egainClientkeySecret: process.env.EGAIN_ENCODED_KEY_SECRET,
-    
+     egainTokenClientId: process.env.EGAIN_TOKEN_CLIENT_ID,
+     egainScope: process.env.EGAIN_SCOPE,
+
+     //eGain Basic Auth Credentials
+     authName:  process.env.AUTHAPINAME,
+     basicAuthUsername: process.env.EGAIN_AUTH_USERNAME,
+     basicAuthPassword: process.env.EGAIN_AUTH_PASSWORD,
+
 
   // URL of your app domain
   appUrl: process.env.APP_URL,
-
+  clientappname: process.env.CLIENT_APP_NAME, 
+  accountName: process.env.ACCOUNT_NAME, 
+  channelType: process.env.CHANNEL_NAME, 
+  orchestrationName: process.env.ORCHESTRATION_NAME,
   // URL of your website
   shopUrl: process.env.SHOP_URL,
 
+  //MongoDB URl
+  mongoUri: process.env.MONGODB_URI ||  
+    process.env.MONGO_HOST ||
+    'mongodb://' + (process.env.IP || 'localhost') + ':' + 
+   (process.env.MONGO_PORT || '27017') +
+    '/mernproject' ,
+    
   // Persona IDs
   personas: {},
 

@@ -29,7 +29,6 @@ module.exports = class Receive {
     this.webhookEvent = webhookEvent;
   }
 
-  
 //handle Egain continous message
 handleEgain2InstagramMessage() {
     
@@ -92,7 +91,7 @@ handleEgain2InstagramMessage() {
     }
   }
  
-  
+ 
   //Egain Handle New message
   handleEgainNewMessage() {
     console.log('ENter NEW egain messagae');
