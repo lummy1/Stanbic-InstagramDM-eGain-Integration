@@ -72,6 +72,7 @@ egainGetTokenUrl: process.env.EGAIN_GET_TOKEN_URL,
   clientappname: process.env.CLIENT_APP_NAME, 
   accountName: process.env.ACCOUNT_NAME, 
   channelType: process.env.CHANNEL_NAME, 
+  channelAddress: process.env.CHANNEL_ADDRESS, 
   orchestrationName: process.env.ORCHESTRATION_NAME,
   // URL of your website
   shopUrl: process.env.SHOP_URL,

@@ -25,10 +25,10 @@ module.exports = class Egain {
     //     userFirstName: user.firstName
     //   })
     // );
-    console.log('sender ' + sender);
-    console.log('msg ' + message);
+    //console.log('sender ' + sender);
+    //console.log('msg ' + message);
 
-    console.log('msgid ' + msgid);
+    //console.log('msgid ' + msgid);
     return message;
   }
 
@@ -36,326 +36,308 @@ module.exports = class Egain {
 
   static async SendEgainContinueMessage(user, webhookEvent) {
     let psid = user.psid;
+    //let message = webhookEvent.message.text;
+    let conversationId = user.convoid;
+   
     let message = webhookEvent.message.text;
+    let msgs = webhookEvent.message;
+    console.dir(msgs, { depth: null });
     let convid = '';
-    console.log(
-      'Inside  SendEgain Continue  Message for ' +
-        user.username +
-        'and convoid ' +
-        user.convoid
-    );
+    // console.log(
+    //   'Inside  Send to Egain Continue  Message for ' +
+    //   msgs +
+    //     'and convoid ' +
+    //     user.convoid
+    // );
+
+
+
     try {
-      if (user.convoid === '') {
-        console.log('Create  SendEgain New  Message since convoid is null');
 
-        let url = new URL(
-          `${config.egainAPiUrl}/authentication/oauth2/token?forceLogin=yes`
-        );
-        let address = await fetch(url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            Accept: 'application/json',
-            'Accept-Language': 'en-us',
 
-            Authorization: `Basic ${config.egainClientkeySecret}`,
-          },
-          body: 'grant_type=client_credentials',
-          // form: {
-          //   "grant_type": "client_credentials"
-          // }
-        });
+      //get accesstoken for all API calls
+      const params = new URLSearchParams();
+      params.append('grant_type', 'client_credentials');
+      params.append('client_id', `${config.egainTokenClientId}`);
+      params.append('client_secret', `${config.egainClientkeySecret}`);
+      params.append('scope', `${config.egainScope}`);
 
-        let data = await address.json();
+      let url = new URL(`${config.egainGetTokenUrl}`);
+      let get_token = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          Accept: 'application/json',
+          'Accept-Language': 'en-us',
 
-        console.log('data.access_token ' + data.access_token);
-        let urls = new URL(
-          `${config.egainAPiUrl}/messaging/configuration?entrypoint=${config.egainEntrypointId}`
-        );
+          // "Authorization":`Basic ${config.egainClientkeySecret}`
+        },
+        body: params,
+      });
 
-        //console.log(head);
-        let rr = await fetch(urls, {
-          method: 'GET',
-          headers: {
-            Accept: 'application/json',
-            'Accept-Language': 'en-us',
+      let data = await get_token.json();
 
-            Authorization: `Bearer ${data.access_token}`,
-          },
-          // body: "grant_type=client_credentials",
-          // form: {
-          //   "grant_type": "client_credentials"
-          // }
-        });
+      var access_token = data.access_token;
 
-        let dat = await rr.json();
+     // console.log('data.access_token ' + access_token);
 
-        var body = {
-          entryPointConfiguration: {
-            entryPoint: {
-              id: `${config.egainEntrypointId}`,
-            },
-            lastModified: {
-              date: dat.entryPointConfiguration[0].lastModified.date,
-            },
-          },
-          activity: {
-            customer: {
-              type: {
-                value: 'individual',
-              },
-              contacts: {
-                contact: [
-                  {
-                    firstName: user.name,
-                    social: [
-                      {
-                        type: {
-                          value: 'instagram',
-                        },
-                        socialId: user.username,
-                      },
-                    ],
-                  },
-                ],
-              },
-            },
-          },
-        };
-        body = JSON.stringify(body);
-        // console.log(body)
-
-        let urlses = new URL(
-          `${config.egainAPiUrl}/messaging/conversation/start?searchContactOnAttribute=social.instagramId&conversationContact=social.instagramId`
-        );
-
-        let jj = await fetch(urlses, {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            'Accept-Language': 'en-us',
-            'Content-Type': 'application/json',
-            Authorization: `Bearer  ${data.access_token}`,
-          },
-          body: body,
-        });
-
-        let datum = await jj.json();
-        convid = datum.id;
-
-        var msg = {
-          conversation: {
-            id: datum.id,
-          },
-          type: {
-            value: 'text/plain',
-          },
-          content: message,
-        };
-        msg = JSON.stringify(msg);
-        console.log(msg);
-
-        let urlses1 = new URL(`${config.egainAPiUrl}/messaging/sendmessage`);
-
-        let kk = await fetch(urlses1, {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            'Accept-Language': 'en-us',
-            'Content-Type': 'application/json',
-            Authorization: `Bearer  ${data.access_token}`,
-          },
-          body: msg,
-        });
-      } else {
-        convid = user.convoid;
-        //console.log('user funra e' + JSON.stringify(user));
-        //  console.log('user .psid' + user.psid);
-        //  console.log('user .firstName' + user.firstName);
-        //  console.log('user .username' + user.username);
-        // console.log('user.psid ' + user.psid);
-        // console.log('user.name ' + user.name);
-        //console.log('username ' + user.convoid);
-        //console.log('username ' + user.username);
-        //  console.log('user ' + user.username);
-        // console.log('msg '+message);
-        let url = new URL(
-          `${config.egainAPiUrl}/authentication/oauth2/token?forceLogin=yes`
-        );
-        let address = await fetch(url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            Accept: 'application/json',
-            'Accept-Language': 'en-us',
-            Authorization: `Basic ${config.egainClientkeySecret}`,
-          },
-
-          body: 'grant_type=client_credentials',
-          // form: {
-          //   "grant_type": "client_credentials"
-          // }
-        });
-
-        let data = await address.json();
-
+      if (conversationId === '') {
+        
+        let res=await this.SendEgainNewMessage(user, webhookEvent);
+   
         let msgs = webhookEvent.message;
 
+      
+      }else{
+
         if (msgs.is_deleted === true) {
-          var msg = {
-            conversation: {
-              id: user.convoid,
-            },
-            type: {
-              value: 'text/plain',
-            },
-            content: 'The message has been deleted',
-          };
-          msg = JSON.stringify(msg);
-          //console.log(msg)
+          console.log('got into delete');
+         
 
-          let urlses1 = new URL(`${config.egainAPiUrl}/messaging/sendmessage`);
+          var att_msg_req={
+                messages: {
+                  message: [
+                    {
+                      messageId: `${msgs.mid}`,
+                      conversation: {
+                        id: `${conversationId}`,
+                      },
+                      parent: {
+                        id: `${msgs.mid}`
+                      },
+                      type: {value: 'delete.soft'},
+                      sender: {type: 'customer'}
+                    }
+                  ]
+                }
+              }
+          
+        
+          
+ 
+          var att_msg= JSON.stringify(att_msg_req);
+          //console.dir(sendmsg_body)
+         let sendmsg_url = new URL(`${config.egainAPiUrl}/conversations/messages`);
+         let sendmsg_response = await fetch(sendmsg_url, {
+           method: 'POST',
+           headers: {
+             'Content-Type': 'application/json',
+             Accept: 'application/json',
+             'Accept-Language': 'en-us',
+             Authorization: `Bearer  ${access_token}`,
+           },
+           body: att_msg,
+         });
+     
+         let del_msg = await sendmsg_response.json();
+          
+          // Get the attachment
+         console.dir(del_msg,  { depth: null })
+         if (del_msg.code != undefined || del_msg.error != undefined) {
+          var developerMsg = del_msg.developerMessage;
+          return developerMsg;
+        } 
+          
+           
 
-          let kk = await fetch(urlses1, {
-            method: 'POST',
-            headers: {
-              Accept: 'application/json',
-              'Accept-Language': 'en-us',
-              'Content-Type': 'application/json',
-              Authorization: `Bearer  ${data.access_token}`,
-            },
-            body: msg,
-          });
+           
         } else if (msgs.text) {
-          //console.log(JSON.stringify(user));
+          console.log('got into text msg');
 
           //console.log('data.access_token '+data.access_token);
 
-          var msg = {
-            conversation: {
-              id: user.convoid,
+          //Send  message
+     var sendmsg_req = {
+      "metadata": {
+        "attributes": [
+          {
+            "name": "k1",
+            "value": "v1"
+          }
+        ]
+      },
+      "messages": {
+        "message": [
+          {
+            "messageId":`${msgs.mid}`,
+            "type": {
+              "value": "text"
             },
-            type: {
-              value: 'text/plain',
+            "content": {
+              "text": `${message}`
             },
-            content: message,
-          };
-          msg = JSON.stringify(msg);
-          //console.log(msg)
-
-          let urlses1 = new URL(`${config.egainAPiUrl}/messaging/sendmessage`);
-
-          let kk = await fetch(urlses1, {
-            method: 'POST',
-            headers: {
-              Accept: 'application/json',
-              'Accept-Language': 'en-us',
-              'Content-Type': 'application/json',
-              Authorization: `Bearer  ${data.access_token}`,
+            "conversation": {
+              "id":  `${conversationId}`,
+              "account": {
+                "channel": {
+                  "type": `${config.channelType}`
+                },
+                "address": `${config.channelAddress}`
+              },
+              "clientInfo": {
+                "timeOffset": 30,
+                "referrerName": "DD",
+                "referrerUrl": "http://egain.com"
+              },
+              "lookupContact": "phone.mobile",
+              "conversationContact": "phone.mobile",
+              "customer": {
+                "name": `${user.name}`,
+                "type": "individual",
+                "attributes": [
+                  {
+                    "name": "group",
+                    "value": "eGain"
+                  }
+                ],
+                "contacts": {
+                  "contact": [
+                    {
+                      "type": "phone",
+                      "subType": "mobile",
+                      "address": "123456788"
+                    },
+                    {
+                      "type": "email",
+                      "address": "johnsmith@example.com"
+                    }
+                  ]
+                }
+              }
             },
-            body: msg,
-          });
-        } else if (msgs.attachments) {
-          let attachment = msgs.attachments[0];
-          let type = attachment.type;
-          let url = attachment.payload.url;
-          let response;
-
-          console.log(url);
-          //     var msg = {
-          //       "conversation":{
-          //        "id":user.convoid
-          //     },
-          //     "type":{
-          //        "value":"uploadAttachment"
-          //     },
-          //     "attachments":{
-          //        "attachment":[
-          //           {
-          //              "fileName":"attachment.jpeg",
-          //              "contentType":"image/jpeg",
-          //              "size":"32",
-          //              "contentUrl":url
-          //           }
-          //        ]
-          //     }
-          //  }
-
-          var msg = {
-            conversation: {
-              id: user.convoid,
+            "sender": {
+              "type": "customer",
+              "participant": {
+                "name": "customer_name"
+              }
             },
-            type: {
-              value: 'text/plain',
-            },
-            content: url,
-          };
-          msg = JSON.stringify(msg);
-
-          console.log('url1' + url);
-          // var msg ={
-          //   "conversation":{
-          //      "id":user.convoid
-          //   },
-          //   "type":{
-          //      "value":"text/plain"
-          //   },
-          //  "content":url
-          // }
-
-          //msg=JSON.stringify(msg)
-
-          // msg=JSON.stringify(msg)
-          console.log(msg);
-
-          let urlses1 = new URL(`${config.egainAPiUrl}/messaging/sendmessage`);
-
-          let kk = await fetch(urlses1, {
-            method: 'POST',
-            headers: {
-              Accept: 'application/json',
-              'Accept-Language': 'en-us',
-              'Content-Type': 'application/json',
-              Authorization: `Bearer  ${data.access_token}`,
-            },
-            body: msg,
-          });
-          // Get the attachment
-          let daas = await kk.json();
-          console.log(
-            'Received attachment:',
-            `${JSON.stringify(msgs.attachments)} for ${psid}`
-          );
-          console.log('type ' + JSON.stringify(daas) + ' url ');
-          console.log(
-            'Received attachment:',
-            `${JSON.stringify(attachment)} for ${psid}`
-          );
-
-          response = Response.genQuickReply(i18n.__('fallback.attachment'), [
-            {
-              title: i18n.__('menu.help'),
-              payload: 'CARE_HELP',
-            },
-            {
-              title: i18n.__('menu.start_over'),
-              payload: 'GET_STARTED',
-            },
-          ]);
-
-          //return response;
-        }
+            "attributes": {
+              "attribute": [
+                {
+                  "external": true,
+                  "name": "k1",
+                  "value": "v1"
+                }
+              ]
+            }
+          }
+        ]
       }
-      // let responsemsg = await kk.json();
+    };
+    var sendmsg_body= JSON.stringify(sendmsg_req);
+    //console.dir(sendmsg_body)
+   let sendmsg_url = new URL(`${config.egainAPiUrl}/conversations/messages`);
+   let sendmsg_response = await fetch(sendmsg_url, {
+     method: 'POST',
+     headers: {
+       'Content-Type': 'application/json',
+       Accept: 'application/json',
+       'Accept-Language': 'en-us',
+       Authorization: `Bearer  ${access_token}`,
+     },
+     body: sendmsg_body,
+   });
 
+   let text_msg = await sendmsg_response.json();
+   
+   console.dir(text_msg,  { depth: null })
+   if (text_msg.code != undefined || text_msg.error != undefined) {
+    var developerMsg = text_msg.developerMessage;
+    return developerMsg;
+  } 
+
+
+
+       } else if (msgs.attachments) {
+         console.log('got into attachment');
+         let attachmentss = msgs.attachments;
+
+         console.dir(attachmentss,  { depth: null })
+
+
+         let attachment = msgs.attachments[0];
+         
+         let url = attachment.payload.url;
+        
+
+
+         var att_msg_req={
+           messages: {
+             message: [
+               {
+                 messageId: `${msgs.mid}`,
+                 conversation: {
+                   id: `${conversationId}`,
+                 },
+                 type: {value: 'text'},
+                 attachments: {
+                   attachment: [
+                     {
+                       name: "attachment.jpg",
+                       size: 11838,
+                       contentType: "image/jpeg",
+                       
+                       url: `${url}`,
+                     }
+                     
+                   ]
+                 },
+                 sender: {
+                   type: 'customer',
+                   participant: {name: 'customer_name'}
+                 }
+               }
+             ]
+           }
+         }
+         
+
+         var att_msg= JSON.stringify(att_msg_req);
+         console.dir(att_msg);
+        let sendmsg_url = new URL(`${config.egainAPiUrl}/conversations/messages`);
+        let sendmsg_response = await fetch(sendmsg_url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+            'Accept-Language': 'en-us',
+            Authorization: `Bearer  ${access_token}`,
+          },
+          body: att_msg,
+        });
+    
+        let attach_msg = await sendmsg_response.json();
+         
+         // Get the attachment
+         console.dir(attach_msg,  { depth: null })
+         if (attach_msg.code != undefined || attach_msg.error != undefined) {
+          var developerMsg = attach_msg.developerMessage;
+          return developerMsg;
+        } 
+
+         var response = Response.genQuickReply(i18n.__('fallback.attachment'), [
+           {
+             title: i18n.__('menu.help'),
+             payload: 'CARE_HELP',
+           },
+           {
+             title: i18n.__('menu.start_over'),
+             payload: 'GET_STARTED',
+           },
+         ]);
+
+         //return response;
+       }
+
+  }
       // console.log('conversationid'+datum.id)
 
-      console.log('conversationid' + convid);
+      //console.log('conversationid' + conversationId);
 
       //const  conversationid= datum.id;
       return {
         id: user.psid,
-        conversationid: convid,
+        conversationid: conversationId,
         message: message,
 
         username: user.username,
@@ -368,22 +350,22 @@ module.exports = class Egain {
 
   static async SendEgainNewMessage(user, webhookEvent) {
     let psid = user.psid;
-    let message = webhookEvent.message.text;
+    
 
-    console.log(`\u{1F7EA}message object`);
-      console.log('message'+ webhookEvent)
-      console.dir(webhookEvent, { depth: null });
+     console.log(`\u{1F7EA}user object`);
+    //   console.log('message'+ webhookEvent)
+      console.dir(user, { depth: null });
 
-
+      let message = webhookEvent.message.text;
     let msgs = webhookEvent.message;
     try {
-      console.log('Inside  SendEgain New  Message');
-       console.log('user.psid ' + user.psid);
-       console.log('user.name ' + user.name);
+      // console.log('Inside  SendEgain New  Message');
+      //  console.log('user.psid ' + user.psid);
+      //  console.log('user.name ' + user.name);
 
-       console.log('username ' + user.username);
-       console.log('user ' + user.username);
-      console.log('msg '+message);
+      //  console.log('username ' + user.username);
+      //  console.log('user ' + user.username);
+      // console.log('msg '+message);
 
       //console.log(JSON.stringify(user));
 
@@ -410,14 +392,9 @@ module.exports = class Egain {
 
       var access_token = data.access_token;
 
-      console.log('data.access_token ' + access_token);
+     // console.log('data.access_token ' + access_token);
 
     
-    // let accountapp = await account_response.json();
-    // let accountapp_id= accountapp.id;
-    // console.log(`\u{1F7EA}auth`);
-    //   console.log('accountapp '+ accountapp_id)
-    //   console.dir(accountapp, { depth: null });
    
 
 //Send  message
@@ -443,9 +420,9 @@ module.exports = class Egain {
             "conversation": {
               "account": {
                 "channel": {
-                  "type": "new_custom_channel"
+                  "type": `${config.channelType}`
                 },
-                "address": "123456766"
+                "address": `${config.channelAddress}`
               },
               "clientInfo": {
                 "timeOffset": 30,
@@ -499,7 +476,7 @@ module.exports = class Egain {
     };
 
     var sendmsg_body= JSON.stringify(sendmsg_req);
-    // console.log(body)
+     //console.dir(sendmsg_body)
     let sendmsg_url = new URL(`${config.egainAPiUrl}/conversations/messages`);
     let sendmsg_response = await fetch(sendmsg_url, {
       method: 'POST',
@@ -514,7 +491,7 @@ module.exports = class Egain {
 
     let egain_msg_feedback = await sendmsg_response.json();
     let conversationid= egain_msg_feedback.messages.message[0].conversation.id;
-    console.log(`\u{1F7EA}from eGain`);
+    console.log(`\u{1F7EA}from eGain egain_msg_feedback++++`);
       console.log('egain_msg_feedbackid '+ conversationid)
       console.dir(egain_msg_feedback, { depth: null });
    

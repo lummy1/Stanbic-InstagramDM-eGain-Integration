@@ -36,8 +36,8 @@ const express = require("express"),
   app = express();
 
 var users = {};
-var userk = {};
-var userj = {};
+var updatedUserProfile = {};
+var initialUser = {};
 var userm = {};
 //var messageProfile = {};
 // Parse application/x-www-form-urlencoded
@@ -170,8 +170,8 @@ app.post("/webhook", (req, res) => {
   let body = req.body;
   res.status(200).send("EVENT_RECEIVED");
   //console.log(body.object);
-  // console.log(`\u{1F7EA} Received webhook:`);
-  // console.dir(body, { depth: null });
+  console.log(`\u{1F7EA} Received webhook:`);
+  console.dir(body, { depth: null });
 
  
   // Check if this is an event from a page subscription
@@ -278,7 +278,7 @@ app.post("/webhook", (req, res) => {
         //   console.log(webhookEvent.sender.id);
 
 
-        if (webhookEvent.message!=undefined) {
+        if (webhookEvent.message!=undefined && webhookEvent.message.is_echo!=true) {
         if (!(senderPsid in users)) {
           // First time seeing this user
           //let receiveMessage = new Receive(senderPsid_check, webhookEvent);
@@ -289,8 +289,8 @@ app.post("/webhook", (req, res) => {
             //console.log({ userProfile });
             user.setProfile(userProfile);
             users[senderPsid] = user;
-           // console.log(`Created new user profile:`);
-           // console.log({ user });
+          //   console.log(`Created new user profile:`);
+          //  console.log({ user });
            let messageProfile=await Egain.SendEgainNewMessage(users[senderPsid],webhookEvent);
            let converId=messageProfile.conversationid;
            if (messageProfile) {
@@ -299,18 +299,18 @@ app.post("/webhook", (req, res) => {
              user.setProfile(messageProfile);
             
              users[senderPsid]=user;
-             userk = users[senderPsid];
+             updatedUserProfile = users[senderPsid];
  
-             if (!(converId in userj)) {
-             let user1 = new User(messageProfile.conversationid);
+             if (!(converId in initialUser)) {
+             let userWithConvoid = new User(messageProfile.conversationid);
              
-             user1.setProfile(messageProfile);
-             userj[converId]=user1;
+             userWithConvoid.setProfile(messageProfile);
+             initialUser[converId]=userWithConvoid;
             
-             userm=userj[converId];
+             userm=initialUser[converId];
              }
-             console.log(`updated user profile:`);
-               console.log({ userk });
+            //  console.log(`updated user profile:`);
+            //    console.log({ updatedUserProfile });
                //console.log({ userm });
                
    
@@ -322,8 +322,9 @@ app.post("/webhook", (req, res) => {
          
         }else{
           console.log('users[senderPsid] in SendEgainContinueMessage'+JSON.stringify(users[senderPsid]));
-          console.log('userk1 in SendEgainContinueMessage'+JSON.stringify(userk));
+          console.log('updatedUserProfile in SendEgainContinueMessage'+JSON.stringify(updatedUserProfile));
           console.log('userks1 in SendEgainContinueMessage'+JSON.stringify(userks));
+          console.log('userks1 in SendEgainContinueMessage'+JSON.stringify(userm));
           let messageProfile;
           if((JSON.stringify(userks))!=undefined){
             messageProfile=await Egain.SendEgainContinueMessage(userks,webhookEvent);
@@ -337,18 +338,18 @@ app.post("/webhook", (req, res) => {
            // console.log({ messageProfile });
             user.setProfile(messageProfile);
             users[senderPsid]=user;
-            userk = users[senderPsid];
-            if (!(converId in userj)) {
-              let user1 = new User(messageProfile.conversationid);
+            updatedUserProfile = users[senderPsid];
+            if (!(converId in initialUser)) {
+              let userWithConvoid = new User(messageProfile.conversationid);
               
-              user1.setProfile(messageProfile);
-              userj[converId]=user1;
+              userWithConvoid.setProfile(messageProfile);
+              initialUser[converId]=userWithConvoid;
              
-              userm=userj[converId];
+              userm=initialUser[converId];
               }
             console.log(`updated user profile from continue message:`);
-              //console.log({ userk });
-              console.log('userk2 in SendEgainContinueMessage'+JSON.stringify(userk));
+              //console.log({ updatedUserProfile });
+              console.log('userk2 in SendEgainContinueMessage'+JSON.stringify(updatedUserProfile));
              
              // console.log({ userm });
   
@@ -378,16 +379,19 @@ app.post("/webhook", (req, res) => {
 
   }else if(body.messages.message[0]!=''){
 
+    console.log('egain body ++++++++++++++++++')
+     console.dir(body, { depth: null });
     try{
-   console.log('user k in egain body msg'+JSON.stringify(userk));
+   console.log('updatedUserProfile in egain body msg'+JSON.stringify(updatedUserProfile));
   // console.log('user m in egain body msg'+JSON.stringify(userm));
-     let egainmsgjson=body.message[0];
+     let egainmsgjson=body.messages.message[0];
+    
 let egainconvoid=egainmsgjson.conversation.id;
-let userconvoid=userk.convoid;
+let userconvoid=updatedUserProfile.convoid;
 var userks='';
      if(userconvoid!=egainconvoid){
      
-      var obj=userj;
+      var obj=initialUser;
    //console.log('egainconvoid '+egainconvoid);
    var userks=obj[egainconvoid];
    //console.log('dkk '+userks);
@@ -397,20 +401,20 @@ var userks='';
       //  console.log({ messageProfile });
       //  userm.setConvoProfile(messageProfile);
       //  users[egainconvoid]=userm;
-      //  userk = users[egainconvoid];
+      //  updatedUserProfile = users[egainconvoid];
       //  console.log(`updated user profile from egain body :`);
-      //    console.log({ userk });
+      //    console.log({ updatedUserProfile });
          
      }
     console.log(`\u{1F7EA}egain agent msg`); 
     //console.log("suserscheck=123 " +  JSON.stringify(users[senderPsid]));
     //console.log("su " +  JSON.stringify(user));
    // console.log("suserscheck=12 " +  JSON.stringify(users));
-   // console.log("suserscheck=14 " +  JSON.stringify(userj));
+   // console.log("suserscheck=14 " +  JSON.stringify(initialUser));
    // console.log(dd[egainconvoid].name);
 
-   //console.log('userk '+userk);
-   //console.log('userks '+userks);
+   //console.log('updatedUserProfile '+updatedUserProfile);
+   console.log('userks '+userks);
     //let convoid=body.message[0].conversation.id;
    // console.log("suserscheck=13 " +  JSON.stringify(users[newSenderPsid]));
     //if (convoid in users){
@@ -419,7 +423,7 @@ var userks='';
         let receiveMessage = new Receive(userks,egainmsgjson);
       return receiveMessage.handleEgain2InstagramMessage();
       }else{
-      let receiveMessage = new Receive(userk,egainmsgjson);
+      let receiveMessage = new Receive(updatedUserProfile,egainmsgjson);
       return receiveMessage.handleEgain2InstagramMessage();
       }
 
@@ -541,8 +545,10 @@ var listener = app.listen(config.port, function() {
   ) {
     console.log(
       "Is this the first time running?\n" +
-        "Make sure to set the both the Messenger profile, persona " +
-        "and webhook by visiting:\n" +
+        "Make sure to set the default environment variables and click \n"
+        + config.appUrl +"/default_config \n\n"+
+        " Also, make sure to set the both the Messenger profile, persona " +
+        "and webhook by visiting:\n\n" +
         config.appUrl +
         "/profile?mode=all&verify_token=" +
         config.verifyToken

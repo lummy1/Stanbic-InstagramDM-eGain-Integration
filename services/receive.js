@@ -35,13 +35,13 @@ handleEgain2InstagramMessage() {
     let event = this.webhookEvent;
     let user = this.user;
     console.log('ENter Send to Instagram Continue messagae');
-    console.log('event'+JSON.stringify(event));
-    console.log('user'+JSON.stringify(user));
+    //console.log('event'+JSON.stringify(event));
+   // console.log('user'+JSON.stringify(user));
     //let userss =JSON.stringify(user)
     //console.log('useru'+userss.psid);
     //console.log('useru_val'+this.user.psid);
-    console.log('useru_valconvoid'+this.user.convoid);
-    console.log('egain_valconvoid'+event.conversation.id); 
+    // console.log('useru_valconvoid'+this.user.convoid);
+    // console.log('egain_valconvoid'+event.conversation.id); 
     // in-file, doesn't call `String(val)` on values (default)
   //var localStorage = new Storage(null, { strict: false, ws: '  ' });
   
@@ -55,12 +55,12 @@ handleEgain2InstagramMessage() {
   // myValue = localStorage.getItem('myKey');
 
 
-    let responses;
+    let responses='';
 
     try {
-
+      let checkEgainMsg = event.type.value;
       
-         if(event.content){
+         if(checkEgainMsg=='text'){
         console.log('if coming from egain, send message to instagram');
            // console.log('event'+event.content);
         //if(event.sender.type!='system'){
@@ -78,6 +78,7 @@ handleEgain2InstagramMessage() {
       };
     }
 
+    if(responses!=''){
     if (Array.isArray(responses)) {
       //console.log('got')
      this.sendMessage(responses);
@@ -90,7 +91,7 @@ handleEgain2InstagramMessage() {
       this.sendMessage(responses);
     }
   }
- 
+}
  
   //Egain Handle New message
   handleEgainNewMessage() {
@@ -171,12 +172,12 @@ handleEgain2InstagramMessage() {
   // call the appropriate handler function
   handleMessage() {
     let event = this.webhookEvent;
-
+    let message = event.content.json.content;
     let responses;
 
     try {
-      if (event.message) {
-        let message = event.message;
+      if (message) {
+        //let message = event.message;
 
         if (message.quick_reply) {
           responses = this.handleQuickReply();
@@ -245,7 +246,7 @@ handleEgain2InstagramMessage() {
 
     // check greeting is here and is confident
     let greeting = this.firstEntity(event.message.nlp, "greetings");
-    let message = event.message.text.trim().toLowerCase();
+    let message = event.content.json.content.trim().toLowerCase();
 
     let response;
 
@@ -302,10 +303,12 @@ handleEgain2InstagramMessage() {
     );
 
     let event = this.webhookEvent;
-
+    console.dir("webhookevent" +event, { depth: null });
     // check greeting is here and is confident
     //let greeting = this.firstEntity(event.message.nlp, "greetings");
-    let message = event.content.trim().toLowerCase();
+    //let message = event.content.json.content.trim().toLowerCase();
+    let message = event.content.html;
+    let sender = event.sender.participant.name;
     //let messa = event.content.trim().toLowerCase();
     //console.log('event.content messa'+messa);
     let response;
@@ -326,7 +329,7 @@ handleEgain2InstagramMessage() {
       response = 
         Response.genText(
           i18n.__("egain.msg", {
-            message:event.content
+            message:message
           })
         );
     

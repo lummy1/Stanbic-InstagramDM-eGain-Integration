@@ -77,11 +77,11 @@ module.exports = class DefaultConfig {
       console.log(`\u{1F7EA}auth`);
 
       console.dir(auth, { depth: null });
-      console.log(auth.code);
+      //console.log(auth.code);
       if (auth.code != undefined || auth.error != undefined) {
-        console.log(auth.code);
+        //console.log(auth.code);
         var developerMsg = auth.developerMessage;
-        console.log(developerMsg);
+        //console.log(developerMsg);
         return developerMsg;
       } else {
         var auth_id = auth.id;
@@ -155,7 +155,7 @@ module.exports = class DefaultConfig {
               },
               outbound: {
                 maxTextLength: 140,
-                systemMessages: true,
+                systemMessages: false,
                 midChatAuth: true,
                 features: ['typing_events', 'attachments', 'richText'],
                 richMessageTypes: [
@@ -283,7 +283,7 @@ module.exports = class DefaultConfig {
               //Implement eGain Create Account  API
               var account_req = {
                 name: `${config.accountName}`,
-                address: '123456766',
+                address: `${config.channelAddress}`,
                 channel: {
                   id: `${channelapp_id}`,
                 },
@@ -297,7 +297,7 @@ module.exports = class DefaultConfig {
                     id: `${orchestratinapp_id}`,
                   },
                   entryPoint: {
-                    id: `${config.entryPoint}`,
+                    id: `${config.egainEntrypointId}`,
                   },
                 },
               };
