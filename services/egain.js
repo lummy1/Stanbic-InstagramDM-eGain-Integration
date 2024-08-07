@@ -243,6 +243,9 @@ module.exports = class Egain {
    console.dir(text_msg,  { depth: null })
    if (text_msg.code != undefined || text_msg.error != undefined) {
     var developerMsg = text_msg.developerMessage;
+    if(text_msg.code=='400-630'){
+      let res=await this.SendEgainNewMessage(user, webhookEvent);
+    }
     return developerMsg;
   } 
 
@@ -261,36 +264,70 @@ module.exports = class Egain {
         
 
 
-         var att_msg_req={
-           messages: {
-             message: [
-               {
-                 messageId: `${msgs.mid}`,
-                 conversation: {
-                   id: `${conversationId}`,
-                 },
-                 type: {value: 'text'},
-                 attachments: {
-                   attachment: [
-                     {
-                       name: "attachment.jpg",
-                       size: 11838,
-                       contentType: "image/jpeg",
-                       
-                       url: `${url}`,
-                     }
-                     
-                   ]
-                 },
-                 sender: {
-                   type: 'customer',
-                   participant: {name: 'customer_name'}
-                 }
-               }
-             ]
-           }
-         }
          
+        
+        
+        
+         var att_msg_req={
+
+          "messages": {
+        
+            "message": [
+        
+              {
+        
+               
+        
+                "conversation": {
+        
+                  "id": `${conversationId}`,
+        
+                },
+        
+                "type": {
+        
+                  "value": "text"
+        
+                },
+        
+                "attachments": {
+        
+                  "attachment": [
+        
+                    {
+        
+                      "name": "test.jpg",
+        
+                      "contentType":"image/jpeg",
+        
+                      "size": 11838,
+        
+                      url: `${url}`,
+                    }
+        
+                  ]
+        
+                },
+        
+                "sender": {
+        
+                  "type": "customer",
+        
+                  "participant": {
+        
+                    "name": "customer_name"
+        
+                  }
+        
+                }
+        
+              }
+        
+            ]
+        
+          }
+        
+        }
 
          var att_msg= JSON.stringify(att_msg_req);
          console.dir(att_msg);

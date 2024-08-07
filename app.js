@@ -11,9 +11,11 @@
 "use strict";
 
 const { response } = require("express");
+
 //const nodeUuid = require('uuid');
 //const  mongoose = require("mongoose");
 // Import dependencies and set up http server
+
 const express = require("express"),
 
   { urlencoded, json } = require("body-parser"),
@@ -107,7 +109,53 @@ app.get("/", function(_req, res) {
 //   return res.json(users.token);
  
 // });
+app.get("/testactivity", (req,res)=>{
+ 
 
+async function run() {
+  const query = new URLSearchParams({
+    //$pagenum: '',
+    // $pagesize: '',
+    // $rangestart: '',
+    // $rangesize: '',
+   $attribute: 'all',
+   // $order: 'asc',
+    //$sort: '',
+    //caseID: '',
+    //customerID: '',
+    status: 'completed',
+    mode: 'inbound',
+    //assignedTo: '',
+   // queueID: '',
+    //created: '08/04/2024',
+    //lastModified: '',
+    //assignedUserName: '',
+    type: 'chat',
+    //read: 'yes',
+    //secure: 'yes',
+    department: 'Avante',
+    //custom: ''
+  }).toString();
+
+  const resp = await fetch(
+    `https://api.egain.cloud/core/casemgr/v3/activity?${query}`,
+    {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+        'Accept-Language': 'en-US',
+        Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik1HTHFqOThWTkxvWGFGZnBKQ0JwZ0I0SmFLcyJ9.eyJhdWQiOiI3MTNkYWE1OC0yNTIxLTQzZmMtOTIzZi01Y2RhOGRiZjExZTkiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vZjUxMzAyZGQtNzAzNi00MWI1LWI2MTktZTFhNTJhNjdjNzgwL3YyLjAiLCJpYXQiOjE3MjI5NDY1NjgsIm5iZiI6MTcyMjk0NjU2OCwiZXhwIjoxNzIyOTUwNDY4LCJhaW8iOiJBU1FBMi84WEFBQUFvZWdlY0xZdmNLbVVoRU9jcU9lV0VkZ3R4cTFaR3pEdlA4b1JNaUk5Q2JVPSIsImF6cCI6ImM2NjE0ZjEzLTQ0N2EtNDU1NS04NTM1LTQ5MmE5NjFhZTllOSIsImF6cGFjciI6IjEiLCJvaWQiOiJjZjY4MmJmMy04Nzg5LTQ1NzUtOTA1My0wOTdkZDY4NmZmMjIiLCJyaCI6IjAuQVI0QTNRSVQ5VFp3dFVHMkdlR2xLbWZIZ0ZpcVBYRWhKZnhEa2o5YzJvMl9FZWtlQUFBLiIsInJvbGVzIjpbImFwcC5jb252ZXJzYXRpb24ubm90aWZpY2F0aW9ubWdyLmludGVyYWN0aW9uLnJlYWQiLCJhcHAuY29yZS5kZXBhcnRtZW50bWdyLnJlYWQiLCJhcHAuY29udmVyc2F0aW9uLmNvbnZlcnNhdGlvbm1nci5pbnRlcmFjdGlvbi5yZWFkIiwiYXBwLmNvbnZlcnNhdGlvbi5ub3RpZmljYXRpb25tZ3IuaW50ZXJhY3Rpb24ubWFuYWdlIiwiYXBwLmNvcmUuY3VzdG9tZXJtZ3IubWFuYWdlIiwiYXBwLmNvbnZlcnNhdGlvbi5jb252ZXJzYXRpb25tZ3IubWFuYWdlIiwiYXBwLmtub3dsZWRnZS5wb3J0YWxtZ3IubWFuYWdlIiwiYXBwLmNvbnZlcnNhdGlvbi5jb252ZXJzYXRpb25tZ3IuaW50ZXJhY3Rpb24ubWFuYWdlIiwiYXBwLmNvbnZlcnNhdGlvbi5jb252ZXJzYXRpb25tZ3IucmVhZCIsImFwcC5jb3JlLmN1c3RvbWVybWdyLnJlYWQiLCJhcHAuY29udmVyc2F0aW9uLm5vdGlmaWNhdGlvbm1nci5yZWFkIiwiYXBwLmNvbnZlcnNhdGlvbi5ub3RpZmljYXRpb25tZ3IubWFuYWdlIiwiYXBwLmNvcmUuaW5mb21nci5yZWFkIiwiYXBwLmNvcmUuY2FzZW1nci5tYW5hZ2UiLCJhcHAuY29udmVyc2F0aW9uLm1lc3NhZ2Vyb3V0ZXIucmVhZCJdLCJzdWIiOiJjZjY4MmJmMy04Nzg5LTQ1NzUtOTA1My0wOTdkZDY4NmZmMjIiLCJ0aWQiOiJmNTEzMDJkZC03MDM2LTQxYjUtYjYxOS1lMWE1MmE2N2M3ODAiLCJ1dGkiOiJQRm9ldm14cVkwdWVGcnlMdUxUSEFBIiwidmVyIjoiMi4wIn0.IkvL58h7HsxAABcI89GZDqk6EpYUzGnfS-xD52vYxoOArkx-jbJPZYG2BbTu9osolv-UXAwZ8yDXKqpNJXm9FwL5lbOtiq_cP71lYdOPWwIRssgHq2YuhqccLvzvJeYgw3WrfGGw3VscpV57yfrhFgPLobPtJF_eZ8PFQQNIp5vaHZZLOkWdnn5Vul2ZwcMxk-ny3JRX2w3qURNTPRWyf7QdHx6EB_uNvseWz3LIfRMHLyporMutwkOL1zmmqHc2ffZ-p-xIt4E7yazAd0JFIEAQenAyfoQQkHOTeQK6_S3wgR3pG2jpMBOx9TzaG1YTzey54wuH4WryarbyBlNV2A'
+      }
+    }
+  );
+
+  const data = await resp.json();
+  console.log(data);
+  res.send(data);
+}
+
+run();
+})
 
 //lummy Egain Agent message Post endpoint
 app.post("/agentmsg", (req, res) => {
@@ -406,7 +454,7 @@ var userks='';
       //    console.log({ updatedUserProfile });
          
      }
-    console.log(`\u{1F7EA}egain agent msg`); 
+   // console.log(`\u{1F7EA}egain agent msg`); 
     //console.log("suserscheck=123 " +  JSON.stringify(users[senderPsid]));
     //console.log("su " +  JSON.stringify(user));
    // console.log("suserscheck=12 " +  JSON.stringify(users));
@@ -414,7 +462,7 @@ var userks='';
    // console.log(dd[egainconvoid].name);
 
    //console.log('updatedUserProfile '+updatedUserProfile);
-   console.log('userks '+userks);
+   //console.log('userks '+userks);
     //let convoid=body.message[0].conversation.id;
    // console.log("suserscheck=13 " +  JSON.stringify(users[newSenderPsid]));
     //if (convoid in users){

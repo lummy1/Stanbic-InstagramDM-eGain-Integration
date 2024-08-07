@@ -34,49 +34,43 @@ handleEgain2InstagramMessage() {
     
     let event = this.webhookEvent;
     let user = this.user;
-    console.log('ENter Send to Instagram Continue messagae');
-    //console.log('event'+JSON.stringify(event));
-   // console.log('user'+JSON.stringify(user));
-    //let userss =JSON.stringify(user)
-    //console.log('useru'+userss.psid);
-    //console.log('useru_val'+this.user.psid);
-    // console.log('useru_valconvoid'+this.user.convoid);
-    // console.log('egain_valconvoid'+event.conversation.id); 
-    // in-file, doesn't call `String(val)` on values (default)
-  //var localStorage = new Storage(null, { strict: false, ws: '  ' });
-  
-  // in-memory, does call `String(val)` on values (i.e. `{}` becomes `'[object Object]'`
-  //var sessionStorage = new Storage(null, { strict: true });
-  
-  // var myValue = { foo: 'bar', baz: 'quux' };
-  // if (user.psid){
-  // localStorage.setItem('myKey', user);
-  // }
-  // myValue = localStorage.getItem('myKey');
-
-
-    let responses='';
-
-    try {
-      let checkEgainMsg = event.type.value;
+    console.log('from egain Send to Instagram Continue messagae');
+    console.log(`\u{1F7}event object`);
       
-         if(checkEgainMsg=='text'){
-        console.log('if coming from egain, send message to instagram');
+    console.dir(event, { depth: null });
+
+    //let responses='';
+
+    if(event.type.value=='text'){
+       try {
+      
+  
+    console.log(event.content);
+    console.log(event.attachments); 
+      if(event.content!=undefined ){
+        console.log('if textmsg coming from egain, send message to instagram');
+           // console.log('event'+event.content);
+       
+       var responses = this.handleEgainTextMessage();
+        console.log('responses  '+JSON.stringify(responses))
+        
+      }else if(event.attachments!=undefined){
+        console.log('if attachmentmsg coming from egain, send message to instagram');
            // console.log('event'+event.content);
         //if(event.sender.type!='system'){
-        responses = this.handleEgainTextMessage();
+          var attachmentJson=event.attachments.attachment[0];
+        var responses = this.handleEgainAttachmentMessage(attachmentJson);
         console.log('responses  '+JSON.stringify(responses))
-        //}
       }
-        
-      
+    
     } catch (error) {
       console.error(error);
-      responses = {
+      var responses_error = {
         text: `An error has occured: '${error}'. We have been notified and \
         will fix the issue shortly!`
       };
     }
+  
 
     if(responses!=''){
     if (Array.isArray(responses)) {
@@ -92,7 +86,7 @@ handleEgain2InstagramMessage() {
     }
   }
 }
- 
+}
   //Egain Handle New message
   handleEgainNewMessage() {
     console.log('ENter NEW egain messagae');
@@ -297,20 +291,23 @@ handleEgain2InstagramMessage() {
 
 
   handleEgainTextMessage() {
-    console.log(
-      "Received text:",
-      `${this.webhookEvent.content} for ${this.user.psid} and ${this.user.username} and ${this.user}`
-    );
+    // console.log(
+    //   "Received text:",
+    //   `${this.webhookEvent.content} for ${this.user.psid} and ${this.user.username} and ${this.user}`
+    // );
 
     let event = this.webhookEvent;
-    console.dir("webhookevent" +event, { depth: null });
+    console.dir(event, { depth: null });
+    console.log(event.type.value)
     // check greeting is here and is confident
     //let greeting = this.firstEntity(event.message.nlp, "greetings");
     //let message = event.content.json.content.trim().toLowerCase();
-    let message = event.content.html;
-    let sender = event.sender.participant.name;
+     //let sender = event.sender.participant.name;
     //let messa = event.content.trim().toLowerCase();
     //console.log('event.content messa'+messa);
+
+    let message = event.content.html;
+   
     let response;
 
     // if (
@@ -339,23 +336,27 @@ handleEgain2InstagramMessage() {
 
 
   // Handles mesage events with attachments
-  handleAttachmentMessage() {
+  handleEgainAttachmentMessage(attachmentJson) {
     let response;
 
+   
     // Get the attachment
-    let attachment = this.webhookEvent.message.attachments[0];
-    console.log("Received attachment:", `${attachment} for ${this.user.psid}`);
+    //let attachment = this.webhookEvent.messages.message[0].attachments.attachment[0];
+    // console.log("Received attachment:", `${attachmentJson} for ${this.user.psid}`);
+    // console.dir('attachment '+attachmentJson, { depth: null });
 
-    response = Response.genQuickReply(i18n.__("fallback.attachment"), [
-      {
-        title: i18n.__("menu.help"),
-        payload: "CARE_HELP"
-      },
-      {
-        title: i18n.__("menu.start_over"),
-        payload: "GET_STARTED"
-      }
-    ]);
+    let image_url=attachmentJson.url;
+    let title=attachmentJson.name;
+    let subtitle=attachmentJson.name;
+    response = 
+        Response.genImageTemplate(
+          
+          image_url, title, subtitle
+          
+        );
+    
+//console.log('check '+JSON.stringify(response))
+   
 
     return response;
   }
@@ -477,7 +478,7 @@ handleEgain2InstagramMessage() {
   }
 
   sendMessage(response, delay = 0) {
-console.log('inside send message: user- '+this.user.psid +'and message -'+response)
+//console.log('inside send message: user- '+this.user.psid +'and message -'+response)
 
     
     if(response!=undefined){
