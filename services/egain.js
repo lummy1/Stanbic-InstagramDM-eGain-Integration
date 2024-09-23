@@ -11,10 +11,11 @@
 'use strict';
 
 // Imports dependencies
-
+const probe = require('probe-image-size');
 const config = require('./config'),
   Response = require('./response'),
   i18n = require('../i18n.config'),
+
   fetch = require('node-fetch'),
   { URL, URLSearchParams } = require('url');
 
@@ -98,12 +99,12 @@ module.exports = class Egain {
                 messages: {
                   message: [
                     {
-                      messageId: `${msgs.mid}`,
+                     
                       conversation: {
-                        id: `${conversationId}`,
+                        id: `${conversationId}`
                       },
                       parent: {
-                        id: `${msgs.mid}`
+                        messageId: `${msgs.mid}`
                       },
                       type: {value: 'delete.soft'},
                       sender: {type: 'customer'}
@@ -116,7 +117,7 @@ module.exports = class Egain {
           
  
           var att_msg= JSON.stringify(att_msg_req);
-          //console.dir(sendmsg_body)
+          console.dir(att_msg,  { depth: null })
          let sendmsg_url = new URL(`${config.egainAPiUrl}/conversations/messages`);
          let sendmsg_response = await fetch(sendmsg_url, {
            method: 'POST',
@@ -131,7 +132,7 @@ module.exports = class Egain {
      
          let del_msg = await sendmsg_response.json();
           
-          // Get the attachment
+          // Get the deleted msg
          console.dir(del_msg,  { depth: null })
          if (del_msg.code != undefined || del_msg.error != undefined) {
           var developerMsg = del_msg.developerMessage;
@@ -199,7 +200,7 @@ module.exports = class Egain {
                     },
                     {
                       "type": "email",
-                      "address": "johnsmith@example.com"
+                      "address":  `${user.username}@yopmail.com`
                     }
                   ]
                 }
@@ -253,6 +254,8 @@ module.exports = class Egain {
 
        } else if (msgs.attachments) {
          console.log('got into attachment');
+
+
          let attachmentss = msgs.attachments;
 
          console.dir(attachmentss,  { depth: null })
@@ -263,11 +266,14 @@ module.exports = class Egain {
          let url = attachment.payload.url;
         
 
-
+         let img_details = await probe(url);
+         console.log(img_details); 
          
-        
-        
-        
+        let mimetype=img_details.mime;
+        let type=img_details.type;
+        let lengtha=img_details.length;
+        let length=lengtha*10;
+
          var att_msg_req={
 
           "messages": {
@@ -296,15 +302,15 @@ module.exports = class Egain {
         
                     {
         
-                      "name": "test.jpg",
+                      "name": `attachment.${type}`,
         
-                      "contentType":"image/jpeg",
+                      "contentType":`${mimetype}`,
         
-                      "size": 11838,
+                      "size": `${lengtha}`,
         
-                      url: `${url}`,
+                      "url": `${url}`,
                     }
-        
+                   
                   ]
         
                 },
@@ -486,7 +492,7 @@ module.exports = class Egain {
                     },
                     {
                       "type": "email",
-                      "address": "johnsmith@example.com"
+                      "address":  `${user.username}@example.com`
                     }
                   ]
                 }

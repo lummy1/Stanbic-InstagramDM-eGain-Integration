@@ -334,11 +334,11 @@ app.post("/webhook", (req, res) => {
           let user = new User(senderPsid);
           let userProfile = await GraphApi.getUserProfile(senderPsid);
           if (userProfile) {
-            //console.log({ userProfile });
+            console.log({ userProfile });
             user.setProfile(userProfile);
             users[senderPsid] = user;
-          //   console.log(`Created new user profile:`);
-          //  console.log({ user });
+             console.log(`Created new user profile:`);
+            console.log({ user });
            let messageProfile=await Egain.SendEgainNewMessage(users[senderPsid],webhookEvent);
            let converId=messageProfile.conversationid;
            if (messageProfile) {
