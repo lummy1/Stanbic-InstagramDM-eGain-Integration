@@ -439,7 +439,7 @@ app.post("/webhook", (req, res) => {
 
       updatedUserProfile={};
       console.log('updatedUserProfile in egain body msg'+JSON.stringify(updatedUserProfile));
-     
+     }
     try{
    console.log('updatedUserProfile in egain body msg'+JSON.stringify(updatedUserProfile));
   // console.log('user m in egain body msg'+JSON.stringify(userm));
@@ -494,7 +494,7 @@ app.post("/webhook", (req, res) => {
   } catch (e) {
     console.error("Error: ", e);
   }
-}
+
   } else {
     // Return a '404 Not Found' if event is not from a page subscription
     res.sendStatus(404);
