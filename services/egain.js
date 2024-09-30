@@ -44,12 +44,12 @@ module.exports = class Egain {
     let msgs = webhookEvent.message;
     console.dir(msgs, { depth: null });
     let convid = '';
-    // console.log(
-    //   'Inside  Send to Egain Continue  Message for ' +
-    //   msgs +
-    //     'and convoid ' +
-    //     user.convoid
-    // );
+    console.log(
+      'Inside  Send to Egain Continue  Message for ' +
+      msgs +
+        'and convoid ' +
+        user.convoid
+    );
 
 
 
