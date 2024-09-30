@@ -444,7 +444,7 @@ app.post("/webhook", (req, res) => {
    console.log('updatedUserProfile in egain body msg'+JSON.stringify(updatedUserProfile));
   // console.log('user m in egain body msg'+JSON.stringify(userm));
      let egainmsgjson=body.messages.message[0];
-    
+     if(egainmsgjson.type.value!= 'conversation.end'){
     
   let egainconvoid=egainmsgjson.conversation.id;
   let userconvoid=updatedUserProfile.convoid;
@@ -489,7 +489,7 @@ app.post("/webhook", (req, res) => {
       return receiveMessage.handleEgain2InstagramMessage();
       }
 
-    //}
+    }
 
   } catch (e) {
     console.error("Error: ", e);
