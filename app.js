@@ -434,7 +434,7 @@ app.post("/webhook", (req, res) => {
 
     console.log('if coming from egain body ++++++++++++++++++')
      console.dir(body, { depth: null });
-
+     let egainmsgjson=body.messages.message[0];
      if(egainmsgjson.type.value== 'conversation.end'){
 
       updatedUserProfile={};
