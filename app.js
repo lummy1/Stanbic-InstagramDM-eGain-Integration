@@ -327,6 +327,8 @@ app.post("/webhook", (req, res) => {
 
 
         if (webhookEvent.message!=undefined && webhookEvent.message.is_echo!=true) {
+
+
         if (!(senderPsid in users)) {
           // First time seeing this user
           //let receiveMessage = new Receive(senderPsid_check, webhookEvent);
@@ -369,6 +371,9 @@ app.post("/webhook", (req, res) => {
           
          
         }else{
+
+          
+
           console.log('users[senderPsid] in SendEgainContinueMessage'+JSON.stringify(users[senderPsid]));
           console.log('updatedUserProfile in SendEgainContinueMessage'+JSON.stringify(updatedUserProfile));
           console.log('userks1 in SendEgainContinueMessage'+JSON.stringify(userks));
@@ -427,16 +432,23 @@ app.post("/webhook", (req, res) => {
 
   }else if(body.messages.message[0]!=''){
 
-    console.log('egain body ++++++++++++++++++')
+    console.log('if coming from egain body ++++++++++++++++++')
      console.dir(body, { depth: null });
+
+     if(egainmsgjson.type.value== 'conversation.end'){
+
+      updatedUserProfile={};
+      console.log('updatedUserProfile in egain body msg'+JSON.stringify(updatedUserProfile));
+     
     try{
    console.log('updatedUserProfile in egain body msg'+JSON.stringify(updatedUserProfile));
   // console.log('user m in egain body msg'+JSON.stringify(userm));
      let egainmsgjson=body.messages.message[0];
     
-let egainconvoid=egainmsgjson.conversation.id;
-let userconvoid=updatedUserProfile.convoid;
-var userks='';
+    
+  let egainconvoid=egainmsgjson.conversation.id;
+  let userconvoid=updatedUserProfile.convoid;
+  var userks='';
      if(userconvoid!=egainconvoid){
      
       var obj=initialUser;
@@ -468,9 +480,11 @@ var userks='';
     //if (convoid in users){
       //console.log("suserscheck=14 got " +  convoid);
       if(userks!=''){
+        console.log('got in here');
         let receiveMessage = new Receive(userks,egainmsgjson);
       return receiveMessage.handleEgain2InstagramMessage();
       }else{
+        console.log('got in here2');
       let receiveMessage = new Receive(updatedUserProfile,egainmsgjson);
       return receiveMessage.handleEgain2InstagramMessage();
       }
@@ -480,7 +494,7 @@ var userks='';
   } catch (e) {
     console.error("Error: ", e);
   }
-  
+}
   } else {
     // Return a '404 Not Found' if event is not from a page subscription
     res.sendStatus(404);
