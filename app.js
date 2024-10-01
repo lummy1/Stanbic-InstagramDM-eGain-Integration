@@ -38,6 +38,7 @@ const express = require("express"),
   app = express();
 
 var users = {};
+
 var updatedUserProfile = {};
 var initialUser = {};
 var userm = {};
@@ -438,7 +439,10 @@ app.post("/webhook", (req, res) => {
      if(egainmsgjson.type.value== 'conversation.end'){
 
       updatedUserProfile={};
-      console.log('updatedUserProfile in egain body msg'+JSON.stringify(updatedUserProfile));
+      users={};
+      console.log('updatedUserProfile in end conversation'+JSON.stringify(updatedUserProfile));
+      console.log(' users in end conversation'+JSON.stringify( users));
+      return;
      }
     try{
    console.log('updatedUserProfile in egain body msg'+JSON.stringify(updatedUserProfile));
