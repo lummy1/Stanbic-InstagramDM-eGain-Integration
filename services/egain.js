@@ -533,11 +533,12 @@ module.exports = class Egain {
     });
 
     let egain_msg_feedback = await sendmsg_response.json();
+    console.dir(egain_msg_feedback, { depth: null });
+   
     let conversationid= egain_msg_feedback.messages.message[0].conversation.id;
     console.log(`\u{1F7EA}from eGain egain_msg_feedback++++`);
       console.log('egain_msg_feedbackid '+ conversationid)
-      console.dir(egain_msg_feedback, { depth: null });
-   
+     
 //const  conversationid= datum.id;
       return {
         id: user.psid,
